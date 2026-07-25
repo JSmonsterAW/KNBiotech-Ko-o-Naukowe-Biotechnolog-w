@@ -3,13 +3,15 @@ backend:
   branch: main
 
 media_folder: "Images/uploads"
-public_folder: "/KNBiotech/Images/uploads"
+public_folder: "/Images/uploads"
 
 locale: "pl"
 
 slug:
   encoding: "ascii"
   clean_accents: true
+
+publish_mode: editorial_workflow
 
 collections:
 
