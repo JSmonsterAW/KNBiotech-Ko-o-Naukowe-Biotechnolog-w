@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Oficjalna strona Koła Naukowego Biotechnologów KNBiotech. Poznaj nasze projekty, działalność naukową, wydarzenia i możliwości dołączenia do koła."
+    >
+
+    <title>KNBiotech | Koło Naukowe Biotechnologów</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body class="page-home">
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="site-header" id="site-header">
+        <nav class="navbar">
+
+            <a class="logo" href="index.html">
+
+                <img
+                    src="Images/LOGOS/LOGO5.svg"
+                    alt="KNBiotech Logo"
+                    class="navbar-logo"
+                >
+
+                <div class="logo-text">
+
+                    <h2>KNBiotech</h2>
+
+                </div>
+
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Otwórz menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">
+                    <img class="home"
+                        src="Images/ICONS/home.png"
+                        alt="KNBiotech Logo"
+                        class="navbar-logo"
+                        >
+                </a>
+                <a href="about.html">O nas</a>
+                <a href="projects.html">Projekty</a>
+                <a href="cooperation.html">Współpraca</a>
+                <a href="activities.html">Aktualności</a>
+                <a href="join.html">Dołącz do nas</a>
+
+                <a class="nav-contact-button" href="contact.html">
+                    Kontakt
+                </a>
+                <a
+                    class="nav-member-button"
+                    href="./admin/"
+                >
+                    Panel członka
+                </a>                
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+
+        <section class="join-page-hero">
+            <div class="join-page-hero-content">
+                <div class="join-page-hero-text">
+
+                    <p class="eyebrow">
+                        DOŁĄCZ DO KNBIOTECH
+                    </p>
+
+                    <h1>
+                        Rozwijaj swoje zainteresowania
+                        <span>razem z nami.</span>
+                    </h1>
+
+                    <p>
+                        KNBiotech to miejsce dla osób zainteresowanych
+                        biotechnologią, mikrobiologią, biologią molekularną,
+                        technologią żywności i naukami pokrewnymi.
+                    </p>
+
+                    <div class="join-page-hero-buttons">
+
+                        <a
+                            class="primary-button"
+                            href="#application-form"
+                        >
+                            Wypełnij formularz
+                        </a>
+
+                        <a
+                            class="secondary-button"
+                            href="#declarations"
+                        >
+                            Pobierz deklarację
+                        </a>
+                    </div>
+                </div>
+
+                <aside class="join-hero-card">
+
+                    <p class="join-hero-card-label">
+                        CZŁONKOSTWO
+                    </p>
+
+                    <h2>
+                        Co możesz robić w kole?
+                    </h2>
+
+                    <ul>
+                        <li>Realizować projekty badawcze.</li>
+                        <li>Rozwijać umiejętności laboratoryjne.</li>
+                        <li>Uczestniczyć w konferencjach.</li>
+                        <li>Organizować warsztaty i wydarzenia.</li>
+                        <li>Współpracować ze studentami i naukowcami.</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- =====================================
+             STEPS
+        ====================================== -->
+
+        <section class="section join-steps-section">
+            <div class="section-heading">
+                <div>
+
+                    <p class="eyebrow">
+                        JAK DOŁĄCZYĆ?
+                    </p>
+
+                    <h2>
+                        Trzy proste kroki
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+                    Formularz pozwoli nam poznać Twoje zainteresowania
+                    i zaproponować odpowiednią formę zaangażowania.
+                </p>
+
+            </div>
+
+            <div class="join-steps-grid">
+
+                <article>
+                    <span>01</span>
+                    <h3>Wypełnij formularz</h3>
+
+                    <p>
+                        Podaj podstawowe informacje o sobie,
+                        kierunku studiów i zainteresowaniach.
+                    </p>
+                </article>
+
+                <article>
+                    <span>02</span>
+                    <h3>Pobierz deklarację</h3>
+
+                    <p>
+                        Wybierz polską lub angielską wersję
+                        deklaracji członkowskiej.
+                    </p>
+
+                </article>
+
+                <article>
+                    <span>03</span>
+                    <h3>Poczekaj na kontakt</h3>
+
+                    <p>
+                        Członkowie zarządu skontaktują się z Tobą
+                        w sprawie kolejnych kroków.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- =====================================
+             APPLICATION FORM
+        ====================================== -->
+
+        <section
+            class="join-form-section"
+            id="application-form"
+        >
+
+            <div class="join-form-container">
+                <div class="join-form-introduction">
+
+                    <p class="eyebrow">
+                        FORMULARZ ZGŁOSZENIOWY
+                    </p>
+
+                    <h2>
+                        Opowiedz nam trochę o sobie
+                    </h2>
+
+                    <p>
+                        Po wysłaniu formularza otworzy się Twoja aplikacja
+                        pocztowa z przygotowaną wiadomością adresowaną do:
+                    </p>
+
+                    <div class="join-contact-list">
+                        <div>
+                            <strong>Anna Malicka</strong>
+
+                            <a href="mailto:s226911@sggw.edu.pl">
+                                s226911@sggw.edu.pl
+                            </a>
+                        </div>
+
+                        <div>
+                            <strong>Antoni Wyskwar</strong>
+
+                            <a href="mailto:s220956@sggw.edu.pl">
+                                s220956@sggw.edu.pl
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form
+                    class="membership-form"
+                    id="membership-form"
+                >
+
+                    <div class="form-field form-field-full">
+
+                        <label for="full-name">
+                            Imię i nazwisko
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <input
+                            id="full-name"
+                            name="fullName"
+                            type="text"
+                            autocomplete="name"
+                            placeholder="np. Jan Kowalski"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">
+                            Adres e-mail
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            autocomplete="email"
+                            placeholder="np. student@sggw.edu.pl"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">
+                            Numer telefonu
+                        </label>
+
+                        <input
+                            id="phone"
+                            name="phone"
+                            type="tel"
+                            autocomplete="tel"
+                            placeholder="Opcjonalnie"
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="faculty">
+                            Wydział
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <input
+                            id="faculty"
+                            name="faculty"
+                            type="text"
+                            placeholder="np. Wydział Biologii i Biotechnologii"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-field">
+                        <label for="study-programme">
+                            Kierunek studiów
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <input
+                            id="study-programme"
+                            name="studyProgramme"
+                            type="text"
+                            placeholder="np. Biotechnologia"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-field">
+
+                        <label for="study-year">
+                            Rok studiów
+                        </label>
+
+                        <select
+                            id="study-year"
+                            name="studyYear"
+                        >
+
+                            <option value="">
+                                Wybierz
+                            </option>
+
+                            <option value="1">
+                                1. rok
+                            </option>
+
+                            <option value="2">
+                                2. rok
+                            </option>
+
+                            <option value="3">
+                                3. rok
+                            </option>
+
+                            <option value="4">
+                                4. rok
+                            </option>
+
+                            <option value="5">
+                                5. rok
+                            </option>
+
+                            <option value="inne">
+                                Inny
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-field">
+
+                        <label for="study-level">
+                            Poziom studiów
+                        </label>
+
+                        <select
+                            id="study-level"
+                            name="studyLevel"
+                        >
+
+                            <option value="">
+                                Wybierz
+                            </option>
+
+                            <option value="licencjackie">
+                                Studia licencjackie
+                            </option>
+
+                            <option value="inżynierskie">
+                                Studia inżynierskie
+                            </option>
+
+                            <option value="magisterskie">
+                                Studia magisterskie
+                            </option>
+
+                            <option value="doktoranckie">
+                                Szkoła doktorska
+                            </option>
+
+                            <option value="inne">
+                                Inne
+                            </option>
+                        </select>
+                    </div>
+
+                    <fieldset class="form-field form-field-full interests-fieldset">
+
+                        <legend>
+                            Obszary, które Cię interesują
+                        </legend>
+
+                        <div class="interest-options">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="Mikrobiologia"
+                                >
+                                <span>Mikrobiologia</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="Biologia molekularna"
+                                >
+                                <span>Biologia molekularna</span>
+                            </label>
+
+                            <label>
+
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="Biotechnologia żywności"
+                                >
+                                <span>Biotechnologia żywności</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="Biotechnologia środowiska"
+                                >
+                                <span>Biotechnologia środowiska</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="Projekty laboratoryjne"
+                                >
+                                <span>Projekty laboratoryjne</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="Warsztaty i popularyzacja nauki"
+                                >
+                                <span>Warsztaty i popularyzacja nauki</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="Konferencje i prezentacje"
+                                >
+                                <span>Konferencje i prezentacje</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="Media społecznościowe i promocja"
+                                >
+                                <span>Promocja i social media</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-field form-field-full">
+                        <label for="experience">
+                            Dotychczasowe doświadczenie
+                        </label>
+
+                        <textarea
+                            id="experience"
+                            name="experience"
+                            rows="5"
+                            placeholder="Napisz krótko o doświadczeniu laboratoryjnym, organizacyjnym, konferencjach lub projektach. Brak doświadczenia nie jest przeszkodą."
+                        ></textarea>
+                    </div>
+
+                    <div class="form-field form-field-full">
+                        <label for="motivation">
+                            Co chciałabyś lub chciałbyś robić w KNBiotech?
+                            <span aria-hidden="true">*</span>
+                        </label>
+
+                        <textarea
+                            id="motivation"
+                            name="motivation"
+                            rows="7"
+                            placeholder="Opisz swoje zainteresowania, pomysł na projekt albo rodzaj działalności, w którą chcesz się zaangażować."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="form-field form-field-full">
+                        <label for="availability">
+                            Przybliżona dostępność
+                        </label>
+
+                        <textarea
+                            id="availability"
+                            name="availability"
+                            rows="3"
+                            placeholder="np. 2–3 godziny tygodniowo, głównie popołudniami"
+                        ></textarea>
+                    </div>
+
+                    <label class="form-consent form-field-full">
+                        <input
+                            id="privacy-consent"
+                            type="checkbox"
+                            required
+                        >
+
+                        <span>
+                            Wyrażam zgodę na wykorzystanie podanych informacji
+                            w celu kontaktu dotyczącego członkostwa w KNBiotech.
+                            <strong>*</strong>
+                        </span>
+                    </label>
+
+                    <div class="form-status form-field-full" id="form-status"></div>
+
+                    <div class="form-actions form-field-full">
+                        <button
+                            class="primary-button"
+                            type="submit"
+                        >
+                            Przygotuj wiadomość e-mail
+                        </button>
+
+                        <button
+                            class="form-reset-button"
+                            type="reset"
+                        >
+                            Wyczyść formularz
+                        </button>
+
+                    </div>
+
+                    <p class="form-note form-field-full">
+                        Formularz nie wysyła danych na serwer strony.
+                        Po kliknięciu przycisku zostanie otwarta Twoja
+                        aplikacja pocztowa.
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- =====================================
+
+             DECLARATIONS
+
+        ====================================== -->
+
+        <section
+            class="section declarations-section"
+            id="declarations"
+        >
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">
+                        DOKUMENTY
+                    </p>
+
+                    <h2>
+                        Pobierz deklarację członkowską
+                    </h2>
+                </div>
+
+                <p class="section-description">
+                    Wybierz odpowiednią wersję językową,
+                    uzupełnij dokument i przekaż go zarządowi koła.
+                </p>
+
+            </div>
+
+            <div class="declaration-grid">
+                <a
+                    class="declaration-card"
+                    href="JOIN/deklaracja-członka-2.docx"
+                    download
+                >
+
+                    <div class="declaration-icon" aria-hidden="true">
+                        PL
+                    </div>
+
+                    <div>
+                        <p>WERSJA POLSKA</p>
+                        <h3>Deklaracja członkowska</h3>
+                        <span>Pobierz plik DOCX ↓</span>
+                    </div>
+                </a>
+
+                <a
+                    class="declaration-card"
+                    href="JOIN/membership_declaration_en.docx"
+                    download
+                >
+
+                    <div class="declaration-icon" aria-hidden="true">
+                        EN
+                    </div>
+
+                    <div>
+                        <p>ENGLISH VERSION</p>
+                        <h3>Membership declaration</h3>
+                        <span>Download DOCX ↓</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a class="logo footer-logo" href="index.html">
+
+                    <div class="footer-logo-card">
+                        <div class="footer-logo-image">
+                            <img
+                                src="Images/LOGOS/LOGO5.svg"
+                                alt="KNBiotech logo"
+                                class="footer-logo-image"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>KNBiotech</strong>
+                        <span>Koło Naukowe Biotechnologów</span>
+                    </div>
+
+                </a>
+
+                <p>
+                    Nauka, współpraca i rozwój studentów zainteresowanych
+                    biotechnologią.
+                </p>
+
+            <div class="footer-follow">
+
+                <h3>Follow KNBiotech</h3>
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://www.instagram.com/knbiotech8/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-card">
+
+                        <img
+                            src="Images/LOGOS/ING.png"
+                            alt="Instagram"
+                            class="social-icon"
+                        >
+
+                        <div class="social-text">
+
+                            <strong>Instagram</strong>
+
+                            <span>@knbiotech8</span>
+
+                        </div>
+
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/KNBiotech?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-card">
+
+                        <img
+                            src="Images/LOGOS/FB1.png"
+                            alt="Facebook"
+                            class="social-icon"
+                        >
+
+                        <div class="social-text">
+
+                            <strong>Facebook</strong>
+
+                            <span>KNBiotech</span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            </div>
+
+                <div class="footer-column">
+
+                    <h3>Nawigacja</h3>
+
+                    <a href="#about">O nas</a>
+                    <a href="#projects">Projekty</a>
+                    <a href="cooperation.html">Współpraca</a>
+                    <a href="#activities">Aktualności</a>
+                    <a href="#gallery">Galeria</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>KNBiotech</h3>
+
+                    <a href="#join">Dołącz do nas</a>
+                    <a href="#contact">Kontakt</a>
+                    <a href="#">Polityka prywatności</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 KNBiotech. Wszelkie prawa zastrzeżone.
+                </p>
+
+                <p>
+                    Strona Koła Naukowego Biotechnologów
+                </p>
+
+            </div>
+
+    </footer>
+
+    <button
+        class="back-to-top"
+        id="back-to-top"
+        type="button"
+        aria-label="Wróć na górę strony">
+        ↑
+    </button>
+
+</body>
+
+</html>

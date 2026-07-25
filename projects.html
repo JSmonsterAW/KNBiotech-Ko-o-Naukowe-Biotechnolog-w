@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Oficjalna strona Koła Naukowego Biotechnologów KNBiotech. Poznaj nasze projekty, działalność naukową, wydarzenia i możliwości dołączenia do koła."
+    >
+
+    <title>KNBiotech | Koło Naukowe Biotechnologów</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body class="page-home">
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="site-header" id="site-header">
+        <nav class="navbar">
+
+            <a class="logo" href="index.html">
+
+                <img
+                    src="Images/LOGOS/LOGO5.svg"
+                    alt="KNBiotech Logo"
+                    class="navbar-logo"
+                >
+
+                <div class="logo-text">
+
+                    <h2>KNBiotech</h2>
+
+                </div>
+
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Otwórz menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">
+                    <img class="home"
+                        src="Images/ICONS/home.png"
+                        alt="KNBiotech Logo"
+                        class="navbar-logo"
+                        >
+                </a>
+                <a href="about.html">O nas</a>
+                <a href="projects.html">Projekty</a>
+                <a href="cooperation.html">Współpraca</a>
+                <a href="activities.html">Aktualności</a>
+                <a href="join.html">Dołącz do nas</a>
+
+                <a class="nav-contact-button" href="contact.html">
+                    Kontakt
+                </a>
+                <a
+                    class="nav-member-button"
+                    href="./admin/"
+                >
+                    Panel członka
+                </a>                
+            </div>
+
+        </nav>
+    </header>
+
+
+<main class="projects-library-page">
+
+    <!-- =========================
+         PROJECTS HERO
+    ========================== -->
+
+    <section class="projects-library-hero">
+
+        <div class="projects-library-hero-content">
+
+            <p class="eyebrow">
+                BIBLIOTEKA PROJEKTÓW
+            </p>
+
+            <h1>
+                Poznaj badania realizowane przez <span>członków KNBiotech</span>
+            </h1>
+
+            <p>
+                W tej bibliotece prezentujemy projekty naukowe realizowane
+                przez członków koła, ich główne cele, metody, rezultaty
+                oraz osiągnięcia konferencyjne.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FILTERS
+    ========================== -->
+
+    <section class="project-library-controls">
+
+        <div class="project-search-wrapper">
+
+            <label for="project-search">
+                Wyszukaj projekt
+            </label>
+
+            <input
+                id="project-search"
+                type="search"
+                placeholder="Wpisz tytuł, autora albo słowo kluczowe..."
+            >
+
+        </div>
+
+        <div
+            class="project-filter-buttons"
+            aria-label="Filtrowanie projektów"
+        >
+
+            <button
+                class="project-filter active"
+                type="button"
+                data-filter="all"
+            >
+                Wszystkie
+            </button>
+
+            <button
+                class="project-filter"
+                type="button"
+                data-filter="microbiology"
+            >
+                Mikrobiologia
+            </button>
+
+            <button
+                class="project-filter"
+                type="button"
+                data-filter="molecular"
+            >
+                Biologia molekularna
+            </button>
+
+            <button
+                class="project-filter"
+                type="button"
+                data-filter="food"
+            >
+                Żywność
+            </button>
+
+            <button
+                class="project-filter"
+                type="button"
+                data-filter="environment"
+            >
+                Środowisko
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECT LIBRARY
+    ========================== -->
+
+    <section class="project-library">
+
+        <!-- PROJECT 1 -->
+
+        <article
+            id="coffee-project"
+            class="research-project theme-coffee"
+            data-category="microbiology environment"
+            style="
+                --project-color: #795548;
+                --project-color-dark: #4e342e;
+                --project-color-soft: #f5ece8;
+            "
+        >
+
+            <div class="project-card-preview">
+
+                <div class="project-cover">
+
+                    <img
+                        src="Images/PROJECTS/coffee-project.jpg"
+                        alt="Fusy z kawy wykorzystywane w projekcie badawczym"
+                    >
+
+                    <div class="project-cover-fallback">
+                        <span>☕</span>
+                        <p>Projekt dotyczący fusów z kawy</p>
+                    </div>
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                </div>
+
+                <div class="project-summary">
+
+                    <div class="project-tags">
+                        <span>Mikrobiologia</span>
+                        <span>Zero waste</span>
+                    </div>
+
+                    <h2>
+                        Drugie życie fusów z kawy: przygotowanie podłoża
+                        do hodowli mikroorganizmów
+                    </h2>
+
+                    <p class="project-authors">
+                        <strong>Autorzy:</strong>
+                        KNBiotech — uzupełnij nazwiska autorów
+                    </p>
+
+                    <p class="project-abstract">
+                        Projekt dotyczy wykorzystania fusów z kawy jako
+                        podłoża do hodowli grzybów oraz pożytecznych
+                        mikroorganizmów. Badania koncentrują się na
+                        ekonomicznym i ekologicznym usuwaniu zanieczyszczeń,
+                        które mogłyby negatywnie wpływać na przyszłą hodowlę.
+                    </p>
+
+                    <div class="project-achievements">
+                        <span> III miejsce podczas PDKN</span>
+                        <span> Prezentacja na konferencji Symbioza</span>
+                    </div>
+
+                    <div class="project-preview-actions">
+
+                        <button
+                            class="project-expand-button"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span class="project-expand-label">
+                                Poznaj projekt
+                            </span>
+
+                            <span
+                                class="project-expand-icon"
+                                aria-hidden="true"
+                            >
+                                ↓
+                            </span>
+                        </button>
+
+                        <div class="citation-control">
+
+                            <button
+                                class="citation-toggle"
+                                type="button"
+                                aria-label="Pokaż cytowanie projektu"
+                            >
+                                Cytuj
+                            </button>
+
+                            <div class="citation-popover">
+
+                                <p>
+                                    KNBiotech. (2026). <em>Drugie życie fusów
+                                    z kawy: przygotowanie podłoża do hodowli
+                                    mikroorganizmów</em>. Koło Naukowe
+                                    Biotechnologów SGGW.
+                                </p>
+
+                                <button
+                                    class="copy-citation"
+                                    type="button"
+                                    data-citation="KNBiotech. (2026). Drugie życie fusów z kawy: przygotowanie podłoża do hodowli mikroorganizmów. Koło Naukowe Biotechnologów SGGW."
+                                >
+                                    Kopiuj APA
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-expanded-content">
+
+                <div class="project-detail-grid">
+
+                    <div class="project-detail-main">
+
+                        <h3>
+                            O projekcie
+                        </h3>
+
+                        <p>
+                            Fusy z kawy zawierają między innymi cukry,
+                            minerały oraz związki organiczne, dzięki czemu
+                            mogą być potencjalnym podłożem dla hodowli
+                            mikroorganizmów.
+                        </p>
+
+                        <p>
+                            Ponieważ materiał szybko ulega psuciu, ważnym
+                            etapem projektu było opracowanie metod usuwania
+                            zanieczyszczeń w sposób ekonomiczny i możliwie
+                            przyjazny środowisku.
+                        </p>
+
+                        <h3>
+                            Główne etapy
+                        </h3>
+
+                        <ul>
+                            <li>Przygotowanie i standaryzacja fusów z kawy.</li>
+                            <li>Ocena metod ograniczania zanieczyszczeń.</li>
+                            <li>Testowanie materiału jako podłoża hodowlanego.</li>
+                            <li>Ocena wzrostu wybranych mikroorganizmów.</li>
+                        </ul>
+
+                    </div>
+
+                    <aside class="project-facts">
+
+                        <h3>
+                            Informacje
+                        </h3>
+
+                        <dl>
+                            <div>
+                                <dt>Dziedzina</dt>
+                                <dd>Mikrobiologia środowiskowa</dd>
+                            </div>
+
+                            <div>
+                                <dt>Status</dt>
+                                <dd>Projekt w toku</dd>
+                            </div>
+
+                            <div>
+                                <dt>Rok</dt>
+                                <dd>2026</dd>
+                            </div>
+                        </dl>
+
+                    </aside>
+
+                </div>
+
+                <div class="project-gallery">
+
+                    <img
+                        src="Images/PROJECTS/coffee-1.jpg"
+                        alt="Przygotowanie materiału kawowego"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/coffee-2.jpg"
+                        alt="Analiza próbek"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/coffee-3.jpg"
+                        alt="Prezentacja projektu"
+                    >
+
+                </div>
+
+                <div class="project-author-box">
+
+                    <h3>
+                        Zespół projektu
+                    </h3>
+
+                    <p>
+                        Wpisz tutaj nazwiska autorów, opiekuna naukowego,
+                        kierunek studiów oraz krótką informację o ich
+                        zainteresowaniach badawczych.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 2 -->
+
+        <article
+            id="wild-yeast-project"
+            class="research-project"
+            data-category="molecular"
+            style="
+                --project-color: #7b4bb7;
+                --project-color-dark: #4f2b7a;
+                --project-color-soft: #f2eafa;
+            "
+        >
+
+            <div class="project-card-preview">
+
+                <div class="project-cover">
+
+                    <img
+                        src="Images/PROJECTS/cucumber-project.jpg"
+                        alt="Badania biologii molekularnej ogórka"
+                    >
+
+                    <div class="project-cover-fallback">
+                        <span>🥒</span>
+                        <p>Badania nad genami ogórka</p>
+                    </div>
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                </div>
+
+                <div class="project-summary">
+
+                    <div class="project-tags">
+                        <span>Biologia molekularna</span>
+                        <span>Y2H</span>
+                    </div>
+
+                    <h2>
+                        Zastosowanie systemu dwuhybrydowego drożdży
+                        w badaniach determinacji płci ogórka
+                    </h2>
+
+                    <p class="project-authors">
+                        <strong>Autorzy:</strong>
+                        KNBiotech — uzupełnij nazwiska autorów
+                    </p>
+
+                    <p class="project-abstract">
+                        Projekt wykorzystuje metodę yeast two-hybrid do
+                        badania interakcji pomiędzy białkami związanymi
+                        z determinacją płci kwiatów ogórka, ze szczególnym
+                        uwzględnieniem hermafrodytycznej linii Hgy3.
+                    </p>
+
+                    <div class="project-achievements">
+                        <span> Prezentacja na konferencji Symbioza</span>
+                        <span> Finansowanie Narodowego Centrum Nauki</span>
+                    </div>
+
+                    <div class="project-preview-actions">
+
+                        <button
+                            class="project-expand-button"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span class="project-expand-label">
+                                Poznaj projekt
+                            </span>
+
+                            <span
+                                class="project-expand-icon"
+                                aria-hidden="true"
+                            >
+                                ↓
+                            </span>
+                        </button>
+
+                        <div class="citation-control">
+
+                            <button
+                                class="citation-toggle"
+                                type="button"
+                            >
+                                Cytuj
+                            </button>
+
+                            <div class="citation-popover">
+
+                                <p>
+                                    KNBiotech. (2026). <em>Zastosowanie
+                                    systemu dwuhybrydowego drożdży w badaniach
+                                    determinacji płci ogórka</em>. Koło
+                                    Naukowe Biotechnologów SGGW.
+                                </p>
+
+                                <button
+                                    class="copy-citation"
+                                    type="button"
+                                    data-citation="KNBiotech. (2026). Zastosowanie systemu dwuhybrydowego drożdży w badaniach determinacji płci ogórka. Koło Naukowe Biotechnologów SGGW."
+                                >
+                                    Kopiuj APA
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-expanded-content">
+
+                <div class="project-detail-grid">
+
+                    <div class="project-detail-main">
+
+                        <h3>
+                            Cel eksperymentu
+                        </h3>
+
+                        <p>
+                            Większość odmian ogórka wytwarza kwiaty męskie
+                            lub żeńskie. Linia Hgy3 jest hermafrodytyczna
+                            i w jednym pąku kwiatowym tworzy jednocześnie
+                            słupki oraz pręciki.
+                        </p>
+
+                        <p>
+                            Geny ogórka wprowadzane są do odpowiednich
+                            plazmidów, a następnie do komórek drożdży.
+                            Interakcja analizowanych białek uruchamia gen
+                            reporterowy, którego aktywność można zaobserwować
+                            na podłożu laboratoryjnym.
+                        </p>
+
+                        <h3>
+                            Metody
+                        </h3>
+
+                        <ul>
+                            <li>Klonowanie genów do plazmidów.</li>
+                            <li>Transformacja komórek drożdży.</li>
+                            <li>System yeast two-hybrid.</li>
+                            <li>Analiza aktywacji genu reporterowego.</li>
+                        </ul>
+
+                    </div>
+
+                    <aside class="project-facts">
+
+                        <h3>Informacje</h3>
+
+                        <dl>
+                            <div>
+                                <dt>Model</dt>
+                                <dd>Cucumis sativus</dd>
+                            </div>
+
+                            <div>
+                                <dt>Metoda</dt>
+                                <dd>Yeast two-hybrid</dd>
+                            </div>
+
+                            <div>
+                                <dt>Finansowanie</dt>
+                                <dd>NCN</dd>
+                            </div>
+                        </dl>
+
+                    </aside>
+
+                </div>
+
+                <div class="project-gallery">
+
+                    <img
+                        src="Images/PROJECTS/cucumber-1.jpg"
+                        alt="Kwiaty ogórka"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/cucumber-2.jpg"
+                        alt="Płytki laboratoryjne z drożdżami"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/cucumber-3.jpg"
+                        alt="Praca laboratoryjna nad projektem"
+                    >
+
+                </div>
+
+                <div class="project-author-box">
+                    <h3>Zespół projektu</h3>
+                    <p>Uzupełnij nazwiska autorów i opiekuna naukowego.</p>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 3 -->
+
+        <article
+            id="cucumber-project"
+            class="research-project"
+            data-category="microbiology environment"
+            style="
+                --project-color: #176f78;
+                --project-color-dark: #0d4a50;
+                --project-color-soft: #e4f4f5;
+            "
+        >
+
+            <div class="project-card-preview">
+
+                <div class="project-cover">
+
+                    <img
+                        src="Images/PROJECTS/wild-yeast-project.jpg"
+                        alt="Dzikie drożdże pochodzące z nisz ekologicznych"
+                    >
+
+                    <div class="project-cover-fallback">
+                        <span>🧫</span>
+                        <p>Dzikie drożdże</p>
+                    </div>
+
+                    <span class="project-number">03</span>
+
+                </div>
+
+                <div class="project-summary">
+
+                    <div class="project-tags">
+                        <span>Mikrobiologia</span>
+                        <span>Drożdże</span>
+                    </div>
+
+                    <h2>
+                        Izolacja i charakterystyka dzikich drożdży
+                        z ekstremalnych nisz ekologicznych
+                    </h2>
+
+                    <p class="project-authors">
+                        <strong>Autorzy:</strong>
+                        KNBiotech — uzupełnij nazwiska autorów
+                    </p>
+
+                    <p class="project-abstract">
+                        Projekt skupia się na izolacji dzikich drożdży
+                        występujących w środowiskach narażonych na skrajne
+                        temperatury i promieniowanie UV oraz na identyfikacji
+                        ich potencjalnych zastosowań przemysłowych.
+                    </p>
+
+                    <div class="project-preview-actions">
+
+                        <button
+                            class="project-expand-button"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span class="project-expand-label">
+                                Poznaj projekt
+                            </span>
+
+                            <span
+                                class="project-expand-icon"
+                                aria-hidden="true"
+                            >
+                                ↓
+                            </span>
+                        </button>
+
+                        <div class="citation-control">
+
+                            <button class="citation-toggle" type="button">
+                                Cytuj
+                            </button>
+
+                            <div class="citation-popover">
+
+                                <p>
+                                    KNBiotech. (2026). <em>Izolacja
+                                    i charakterystyka dzikich drożdży
+                                    z ekstremalnych nisz ekologicznych</em>.
+                                    Koło Naukowe Biotechnologów SGGW.
+                                </p>
+
+                                <button
+                                    class="copy-citation"
+                                    type="button"
+                                    data-citation="KNBiotech. (2026). Izolacja i charakterystyka dzikich drożdży z ekstremalnych nisz ekologicznych. Koło Naukowe Biotechnologów SGGW."
+                                >
+                                    Kopiuj APA
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-expanded-content">
+
+                <div class="project-detail-grid">
+
+                    <div class="project-detail-main">
+
+                        <h3>
+                            Zakres projektu
+                        </h3>
+
+                        <p>
+                            Dzikie drożdże mogą wykazywać przystosowania
+                            do trudnych warunków środowiskowych, a cechy te
+                            mogą znaleźć zastosowanie w procesach
+                            przemysłowych i biotechnologicznych.
+                        </p>
+
+                        <h3>
+                            Wykorzystywane metody
+                        </h3>
+
+                        <ul>
+                            <li>Izolacja czystych kultur na podłożu YPD.</li>
+                            <li>Sekwencjonowanie DNA.</li>
+                            <li>Deponowanie sekwencji w bazie NCBI.</li>
+                            <li>Profilowanie białek metodą MALDI-TOF.</li>
+                            <li>Analiza kwasów tłuszczowych metodą GC.</li>
+                        </ul>
+
+                    </div>
+
+                    <aside class="project-facts">
+
+                        <h3>Informacje</h3>
+
+                        <dl>
+                            <div>
+                                <dt>Organizmy</dt>
+                                <dd>Dzikie drożdże</dd>
+                            </div>
+
+                            <div>
+                                <dt>Metody</dt>
+                                <dd>DNA, MALDI-TOF, GC</dd>
+                            </div>
+                        </dl>
+
+                    </aside>
+
+                </div>
+
+                <div class="project-gallery">
+
+                    <img
+                        src="Images/PROJECTS/yeast-1.jpg"
+                        alt="Kolonie drożdży"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/yeast-2.jpg"
+                        alt="Analiza laboratoryjna drożdży"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/yeast-3.jpg"
+                        alt="Przygotowanie prób"
+                    >
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 4 -->
+
+        <article
+            id="peach-project"
+            class="research-project theme-peach"
+            data-category="food microbiology"
+            style="
+                --project-color: #e88945;
+                --project-color-dark: #b65d20;
+                --project-color-soft: #fff0e4;
+            "
+        >
+
+            <div class="project-card-preview">
+
+                <div class="project-cover">
+
+                    <img
+                        src="Images/PROJECTS/PEACH/PEACH1.jpg"
+                        alt="Brzoskwinie pokrywane jadalną powłoką"
+                    >
+
+                    <div class="project-cover-fallback">
+                        <span>🍑</span>
+                        <p>Jadalne powłoki dla owoców</p>
+                    </div>
+
+                    <span class="project-number">04</span>
+
+                </div>
+
+                <div class="project-summary">
+
+                    <div class="project-tags">
+                        <span>Biotechnologia żywności</span>
+                        <span>Powłoki jadalne</span>
+                    </div>
+
+                    <h2>
+                        Pektynowe powłoki z γ-dekalaktonem
+                        do ochrony brzoskwiń
+                    </h2>
+
+                    <p class="project-authors">
+                        <strong>Autorzy:</strong>
+                        KNBiotech — uzupełnij nazwiska autorów
+                    </p>
+
+                    <p class="project-abstract">
+                        Badania dotyczą jadalnych powłok pektynowych
+                        wzbogaconych γ-dekalaktonem, które mogą ograniczać
+                        wzrost pleśni i mikroorganizmów, przedłużać świeżość
+                        owoców oraz wpływać na ich właściwości aromatyczne.
+                    </p>
+
+                    <div class="project-achievements">
+                        <span>Wyróżnienie podczas PDKN</span>
+                        <span>Wyróżnienie podczas International Electronic Conference on Foods</span>
+                    </div>
+
+                    <div class="project-preview-actions">
+
+                        <button
+                            class="project-expand-button"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span class="project-expand-label">
+                                Poznaj projekt
+                            </span>
+
+                            <span
+                                class="project-expand-icon"
+                                aria-hidden="true"
+                            >
+                                ↓
+                            </span>
+                        </button>
+
+                        <div class="citation-control">
+
+                            <button class="citation-toggle" type="button">
+                                Cytuj
+                            </button>
+
+                            <div class="citation-popover">
+
+                                <p>
+                                    KNBiotech. (2026). <em>Pektynowe powłoki
+                                    z γ-dekalaktonem do ochrony brzoskwiń</em>.
+                                    Koło Naukowe Biotechnologów SGGW.
+                                </p>
+
+                                <button
+                                    class="copy-citation"
+                                    type="button"
+                                    data-citation="KNBiotech. (2026). Pektynowe powłoki z γ-dekalaktonem do ochrony brzoskwiń. Koło Naukowe Biotechnologów SGGW."
+                                >
+                                    Kopiuj APA
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-expanded-content">
+
+                <div class="project-detail-grid">
+
+                    <div class="project-detail-main">
+
+                        <h3>
+                            Jak działa powłoka?
+                        </h3>
+
+                        <p>
+                            Pektyna tworzy cienką, bezpieczną i jadalną
+                            warstwę, która ogranicza rozwój pleśni oraz
+                            niepożądanych mikroorganizmów.
+                        </p>
+
+                        <p>
+                            γ-dekalakton jest naturalnym związkiem
+                            o charakterystycznym owocowym aromacie.
+                            Dodanie go do powłoki może poprawiać jej
+                            działanie przeciwdrobnoustrojowe oraz walory
+                            sensoryczne produktu.
+                        </p>
+
+                    </div>
+
+                    <aside class="project-facts">
+
+                        <h3>Informacje</h3>
+
+                        <dl>
+                            <div>
+                                <dt>Materiał</dt>
+                                <dd>Brzoskwinie</dd>
+                            </div>
+
+                            <div>
+                                <dt>Powłoka</dt>
+                                <dd>Pektyna + γ-dekalakton</dd>
+                            </div>
+                        </dl>
+
+                    </aside>
+
+                </div>
+
+                <div class="project-gallery">
+
+                    <img
+                        src="Images/PROJECTS/peach-1.jpg"
+                        alt="Przygotowanie powłok pektynowych"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/peach-2.jpg"
+                        alt="Brzoskwinie w eksperymencie"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/peach-3.jpg"
+                        alt="Analiza mikrobiologiczna"
+                    >
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 5 -->
+
+        <article
+            id="berberis-project"
+            class="research-project theme-berberis"
+            data-category="food"
+            style="
+                --project-color: #bd303c;
+                --project-color-dark: #7e1822;
+                --project-color-soft: #fbe9eb;
+            "
+        >
+
+            <div class="project-card-preview">
+
+                <div class="project-cover">
+
+                    <img
+                        src="Images/PROJECTS/barberry-project.jpg"
+                        alt="Owoce berberysu analizowane laboratoryjnie"
+                    >
+
+                    <div class="project-cover-fallback">
+                        <span>🔴</span>
+                        <p>Bioaktywne związki berberysu</p>
+                    </div>
+
+                    <span class="project-number">05</span>
+
+                </div>
+
+                <div class="project-summary">
+
+                    <div class="project-tags">
+                        <span>Fitochemia</span>
+                        <span>Żywność funkcjonalna</span>
+                    </div>
+
+                    <h2>
+                        Substancje bioaktywne owoców berberysu:
+                        ekstrakcja, aktywność i biodostępność
+                    </h2>
+
+                    <p class="project-authors">
+                        <strong>Autorzy:</strong>
+                        KNBiotech — uzupełnij nazwiska autorów
+                    </p>
+
+                    <p class="project-abstract">
+                        Projekt analizuje potencjał biochemiczny owoców
+                        berberysu, obejmując ekstrakcję substancji
+                        bioaktywnych, ocenę aktywności przeciwutleniającej
+                        oraz symulowaną biodostępność w warunkach przewodu
+                        pokarmowego.
+                    </p>
+
+                    <div class="project-preview-actions">
+
+                        <button
+                            class="project-expand-button"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span class="project-expand-label">
+                                Poznaj projekt
+                            </span>
+
+                            <span
+                                class="project-expand-icon"
+                                aria-hidden="true"
+                            >
+                                ↓
+                            </span>
+                        </button>
+
+                        <div class="citation-control">
+
+                            <button class="citation-toggle" type="button">
+                                Cytuj
+                            </button>
+
+                            <div class="citation-popover">
+
+                                <p>
+                                    KNBiotech. (2026). <em>Substancje
+                                    bioaktywne owoców berberysu: ekstrakcja,
+                                    aktywność i biodostępność</em>. Koło
+                                    Naukowe Biotechnologów SGGW.
+                                </p>
+
+                                <button
+                                    class="copy-citation"
+                                    type="button"
+                                    data-citation="KNBiotech. (2026). Substancje bioaktywne owoców berberysu: ekstrakcja, aktywność i biodostępność. Koło Naukowe Biotechnologów SGGW."
+                                >
+                                    Kopiuj APA
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-expanded-content">
+
+                <div class="project-detail-grid">
+
+                    <div class="project-detail-main">
+
+                        <h3>
+                            Zakres analiz
+                        </h3>
+
+                        <ul>
+                            <li>Ekstrakcja substancji bioaktywnych.</li>
+                            <li>Ocena aktywności przeciwutleniającej.</li>
+                            <li>Symulacja trawienia in vitro.</li>
+                            <li>Ocena potencjalnej biodostępności związków.</li>
+                        </ul>
+
+                        <p>
+                            Symulowane warunki żołądka i jelit pozwalają
+                            ocenić, jaka część analizowanych związków może
+                            potencjalnie trafić do krwiobiegu.
+                        </p>
+
+                    </div>
+
+                    <aside class="project-facts">
+
+                        <h3>Informacje</h3>
+
+                        <dl>
+                            <div>
+                                <dt>Materiał</dt>
+                                <dd>Owoce berberysu</dd>
+                            </div>
+
+                            <div>
+                                <dt>Analizy</dt>
+                                <dd>Antyoksydanty, in vitro</dd>
+                            </div>
+                        </dl>
+
+                    </aside>
+
+                </div>
+
+                <div class="project-gallery">
+
+                    <img
+                        src="Images/PROJECTS/barberry-1.jpg"
+                        alt="Owoce berberysu"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/barberry-2.jpg"
+                        alt="Ekstrakcja związków bioaktywnych"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/barberry-3.jpg"
+                        alt="Planowanie eksperymentu"
+                    >
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 6 -->
+
+        <article
+            id="plant-food-project"
+            class="research-project"
+            data-category="food"
+            style="
+                --project-color: #4f8a45;
+                --project-color-dark: #2e6030;
+                --project-color-soft: #e9f4e6;
+            "
+        >
+
+            <div class="project-card-preview">
+
+                <div class="project-cover">
+
+                    <img
+                        src="Images/PROJECTS/plant-meat-project.jpg"
+                        alt="Roślinne zamienniki mięsa"
+                    >
+
+                    <div class="project-cover-fallback">
+                        <span>🌱</span>
+                        <p>Roślinne zamienniki mięsa</p>
+                    </div>
+
+                    <span class="project-number">06</span>
+
+                </div>
+
+                <div class="project-summary">
+
+                    <div class="project-tags">
+                        <span>Technologia żywności</span>
+                        <span>Analiza tłuszczów</span>
+                    </div>
+
+                    <h2>
+                        Wpływ obróbki termicznej na frakcję tłuszczową
+                        roślinnych zamienników mięsa
+                    </h2>
+
+                    <p class="project-authors">
+                        <strong>Autorzy:</strong>
+                        KNBiotech — uzupełnij nazwiska autorów
+                    </p>
+
+                    <p class="project-abstract">
+                        Projekt porównuje charakterystykę tłuszczów
+                        występujących w roślinnych zamiennikach mięsa
+                        oraz sprawdza, jak smażenie i pieczenie wpływają
+                        na ich stabilność i właściwości fizykochemiczne.
+                    </p>
+
+                    <div class="project-preview-actions">
+
+                        <button
+                            class="project-expand-button"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            <span class="project-expand-label">
+                                Poznaj projekt
+                            </span>
+
+                            <span
+                                class="project-expand-icon"
+                                aria-hidden="true"
+                            >
+                                ↓
+                            </span>
+                        </button>
+
+                        <div class="citation-control">
+
+                            <button class="citation-toggle" type="button">
+                                Cytuj
+                            </button>
+
+                            <div class="citation-popover">
+
+                                <p>
+                                    KNBiotech. (2026). <em>Wpływ obróbki
+                                    termicznej na frakcję tłuszczową
+                                    roślinnych zamienników mięsa</em>. Koło
+                                    Naukowe Biotechnologów SGGW.
+                                </p>
+
+                                <button
+                                    class="copy-citation"
+                                    type="button"
+                                    data-citation="KNBiotech. (2026). Wpływ obróbki termicznej na frakcję tłuszczową roślinnych zamienników mięsa. Koło Naukowe Biotechnologów SGGW."
+                                >
+                                    Kopiuj APA
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-expanded-content">
+
+                <div class="project-detail-grid">
+
+                    <div class="project-detail-main">
+
+                        <h3>
+                            Przebieg badań
+                        </h3>
+
+                        <p>
+                            Z każdego analizowanego produktu ekstrahowano
+                            tłuszcze, które następnie poddawano analizom
+                            instrumentalnym.
+                        </p>
+
+                        <ul>
+                            <li>Chromatografia gazowa — GC.</li>
+                            <li>Różnicowa kalorymetria skaningowa — DSC.</li>
+                            <li>Różnicowa kalorymetria ciśnieniowa — PDSC.</li>
+                            <li>Porównanie próbek przed i po obróbce termicznej.</li>
+                        </ul>
+
+                        <p>
+                            Wyniki pozwalają ocenić stabilność frakcji
+                            tłuszczowej oraz identyfikować produkty, których
+                            receptury mogą wymagać dalszej optymalizacji.
+                        </p>
+
+                    </div>
+
+                    <aside class="project-facts">
+
+                        <h3>Informacje</h3>
+
+                        <dl>
+                            <div>
+                                <dt>Materiał</dt>
+                                <dd>Roślinne zamienniki mięsa</dd>
+                            </div>
+
+                            <div>
+                                <dt>Metody</dt>
+                                <dd>GC, DSC, PDSC</dd>
+                            </div>
+                        </dl>
+
+                    </aside>
+
+                </div>
+
+                <div class="project-gallery">
+
+                    <img
+                        src="Images/PROJECTS/plant-meat-1.jpg"
+                        alt="Roślinne zamienniki mięsa"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/plant-meat-2.jpg"
+                        alt="Ekstrakcja tłuszczu"
+                    >
+
+                    <img
+                        src="Images/PROJECTS/plant-meat-3.jpg"
+                        alt="Analiza instrumentalna"
+                    >
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
+
+</main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a class="logo footer-logo" href="index.html">
+
+                    <div class="footer-logo-card">
+                        <div class="footer-logo-image">
+                            <img
+                                src="Images/LOGOS/LOGO5.svg"
+                                alt="KNBiotech logo"
+                                class="footer-logo-image"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>KNBiotech</strong>
+                        <span>Koło Naukowe Biotechnologów</span>
+                    </div>
+
+                </a>
+
+                <p>
+                    Nauka, współpraca i rozwój studentów zainteresowanych
+                    biotechnologią.
+                </p>
+
+            <div class="footer-follow">
+
+                <h3>Follow KNBiotech</h3>
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://www.instagram.com/knbiotech8/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-card">
+
+                        <img
+                            src="Images/LOGOS/ING.png"
+                            alt="Instagram"
+                            class="social-icon"
+                        >
+
+                        <div class="social-text">
+
+                            <strong>Instagram</strong>
+
+                            <span>@knbiotech8</span>
+
+                        </div>
+
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/KNBiotech?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-card">
+
+                        <img
+                            src="Images/LOGOS/FB1.png"
+                            alt="Facebook"
+                            class="social-icon"
+                        >
+
+                        <div class="social-text">
+
+                            <strong>Facebook</strong>
+
+                            <span>KNBiotech</span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            </div>
+
+                <div class="footer-column">
+
+                    <h3>Nawigacja</h3>
+
+                    <a href="#about">O nas</a>
+                    <a href="#projects">Projekty</a>
+                    <a href="cooperation.html">Współpraca</a>
+                    <a href="#activities">Aktualności</a>
+                    <a href="#gallery">Galeria</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>KNBiotech</h3>
+
+                    <a href="#join">Dołącz do nas</a>
+                    <a href="#contact">Kontakt</a>
+                    <a href="#">Polityka prywatności</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 KNBiotech. Wszelkie prawa zastrzeżone.
+                </p>
+
+                <p>
+                    Strona Koła Naukowego Biotechnologów
+                </p>
+
+            </div>
+
+    </footer>
+
+    <button
+        class="back-to-top"
+        id="back-to-top"
+        type="button"
+        aria-label="Wróć na górę strony">
+        ↑
+    </button>
+
+</body>
+
+</html>
