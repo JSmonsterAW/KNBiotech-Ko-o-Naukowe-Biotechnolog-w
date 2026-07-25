@@ -1,0 +1,354 @@
+backend:
+  name: github
+  repo: JSmonsterAW/KNBiotech
+  branch: main
+
+media_folder: "Images/uploads"
+public_folder: "/KNBiotech/Images/uploads"
+
+locale: "pl"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+collections:
+
+  # ==========================================
+  # PROJECTS
+  # ==========================================
+
+  - name: "projects"
+    label: "Projekty"
+    label_singular: "Projekt"
+    folder: "content/projects"
+    create: true
+    delete: true
+
+    slug: "{{slug}}"
+
+    summary: "{{title}} — {{year}}"
+
+    fields:
+
+      - label: "Tytuł projektu"
+        name: "title"
+        widget: "string"
+
+      - label: "Identyfikator"
+        name: "slug"
+        widget: "string"
+        hint: "Bez spacji i polskich znaków, np. fusy-z-kawy."
+
+      - label: "Kategoria"
+        name: "category"
+        widget: "select"
+        options:
+          - label: "Mikrobiologia"
+            value: "microbiology"
+          - label: "Biologia molekularna"
+            value: "molecular"
+          - label: "Biotechnologia żywności"
+            value: "food"
+          - label: "Biotechnologia środowiska"
+            value: "environment"
+          - label: "Fitochemia"
+            value: "phytochemistry"
+          - label: "Inne"
+            value: "other"
+
+      - label: "Motyw kolorystyczny"
+        name: "theme"
+        widget: "select"
+        options:
+          - label: "Kawa — brązowy"
+            value: "coffee"
+          - label: "Ogórek — zielony"
+            value: "cucumber"
+          - label: "Drożdże — fioletowy"
+            value: "yeast"
+          - label: "Brzoskwinia — pomarańczowy"
+            value: "peach"
+          - label: "Berberys — bordowy"
+            value: "berberis"
+          - label: "Żywność roślinna — oliwkowy"
+            value: "plant-food"
+          - label: "Domyślny KNBiotech"
+            value: "default"
+
+      - label: "Rok"
+        name: "year"
+        widget: "number"
+        value_type: "int"
+        min: 2000
+        max: 2100
+
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options:
+          - label: "Planowany"
+            value: "planned"
+          - label: "W toku"
+            value: "ongoing"
+          - label: "Zakończony"
+            value: "completed"
+
+      - label: "Autorzy"
+        name: "authors"
+        widget: "list"
+        summary: "{{fields.name}}"
+        fields:
+          - label: "Imię i nazwisko"
+            name: "name"
+            widget: "string"
+
+          - label: "Rola"
+            name: "role"
+            widget: "string"
+            required: false
+
+          - label: "Opis autora"
+            name: "bio"
+            widget: "text"
+            required: false
+
+          - label: "Zdjęcie autora"
+            name: "photo"
+            widget: "image"
+            required: false
+
+      - label: "Opiekun naukowy"
+        name: "supervisor"
+        widget: "string"
+        required: false
+
+      - label: "Krótki opis"
+        name: "abstract"
+        widget: "text"
+
+      - label: "Szczegółowy opis"
+        name: "body"
+        widget: "markdown"
+
+      - label: "Cel projektu"
+        name: "objective"
+        widget: "markdown"
+        required: false
+
+      - label: "Metody"
+        name: "methods"
+        widget: "list"
+        required: false
+        field:
+          label: "Metoda"
+          name: "method"
+          widget: "string"
+
+      - label: "Wyniki"
+        name: "results"
+        widget: "markdown"
+        required: false
+
+      - label: "Osiągnięcia"
+        name: "achievements"
+        widget: "list"
+        required: false
+        field:
+          label: "Osiągnięcie"
+          name: "achievement"
+          widget: "string"
+
+      - label: "Słowa kluczowe"
+        name: "tags"
+        widget: "list"
+        required: false
+        field:
+          label: "Słowo kluczowe"
+          name: "tag"
+          widget: "string"
+
+      - label: "Zdjęcie główne"
+        name: "cover"
+        widget: "image"
+
+      - label: "Galeria projektu"
+        name: "gallery"
+        widget: "list"
+        required: false
+        summary: "{{fields.caption}}"
+        fields:
+          - label: "Zdjęcie"
+            name: "image"
+            widget: "image"
+
+          - label: "Opis zdjęcia"
+            name: "caption"
+            widget: "string"
+
+          - label: "Tekst alternatywny"
+            name: "alt"
+            widget: "string"
+
+      - label: "Cytowanie APA"
+        name: "citation"
+        widget: "text"
+
+      - label: "Widoczny"
+        name: "published"
+        widget: "boolean"
+        default: true
+
+
+  # ==========================================
+  # ACTIVITIES
+  # ==========================================
+
+  - name: "activities"
+    label: "Aktualności i aktywności"
+    label_singular: "Aktywność"
+    folder: "content/activities"
+    create: true
+    delete: true
+
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+
+    summary: "{{date}} — {{title}}"
+
+    fields:
+
+      - label: "Tytuł"
+        name: "title"
+        widget: "string"
+
+      - label: "Data"
+        name: "date"
+        widget: "datetime"
+        date_format: "DD.MM.YYYY"
+        time_format: false
+
+      - label: "Lokalizacja"
+        name: "location"
+        widget: "string"
+        required: false
+
+      - label: "Krótki opis"
+        name: "summary"
+        widget: "text"
+
+      - label: "Pełny opis"
+        name: "body"
+        widget: "markdown"
+
+      - label: "Zdjęcie główne"
+        name: "cover"
+        widget: "image"
+
+      - label: "Galeria wydarzenia"
+        name: "gallery"
+        widget: "list"
+        required: false
+        summary: "{{fields.caption}}"
+        fields:
+          - label: "Zdjęcie"
+            name: "image"
+            widget: "image"
+
+          - label: "Podpis"
+            name: "caption"
+            widget: "string"
+
+          - label: "Tekst alternatywny"
+            name: "alt"
+            widget: "string"
+
+      - label: "Powiązany projekt"
+        name: "relatedProject"
+        widget: "relation"
+        collection: "projects"
+        search_fields:
+          - "title"
+        value_field: "slug"
+        display_fields:
+          - "title"
+        required: false
+
+      - label: "Widoczna"
+        name: "published"
+        widget: "boolean"
+        default: true
+
+
+  # ==========================================
+  # GALLERIES
+  # ==========================================
+
+  - name: "galleries"
+    label: "Galerie"
+    label_singular: "Galeria"
+    folder: "content/galleries"
+    create: true
+    delete: true
+
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+
+    summary: "{{title}}"
+
+    fields:
+
+      - label: "Tytuł galerii"
+        name: "title"
+        widget: "string"
+
+      - label: "Data"
+        name: "date"
+        widget: "datetime"
+        date_format: "DD.MM.YYYY"
+        time_format: false
+
+      - label: "Opis"
+        name: "description"
+        widget: "text"
+        required: false
+
+      - label: "Zdjęcie okładkowe"
+        name: "cover"
+        widget: "image"
+
+      - label: "Zdjęcia"
+        name: "photos"
+        widget: "list"
+        summary: "{{fields.caption}}"
+        fields:
+          - label: "Zdjęcie"
+            name: "image"
+            widget: "image"
+
+          - label: "Podpis"
+            name: "caption"
+            widget: "string"
+
+          - label: "Autor zdjęcia"
+            name: "photographer"
+            widget: "string"
+            required: false
+
+          - label: "Tekst alternatywny"
+            name: "alt"
+            widget: "string"
+
+      - label: "Powiązana aktywność"
+        name: "relatedActivity"
+        widget: "relation"
+        collection: "activities"
+        search_fields:
+          - "title"
+        value_field: "{{slug}}"
+        display_fields:
+          - "title"
+        required: false
+
+      - label: "Widoczna"
+        name: "published"
+        widget: "boolean"
+        default: true
