@@ -18,6 +18,10 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script
+    src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+
     <script src="script.js" defer></script>
 </head>
 
@@ -670,6 +674,18 @@
         aria-label="Wróć na górę strony">
         ↑
     </button>
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", function (user) {
+                if (!user) {
+                    window.netlifyIdentity.on("login", function () {
+                        window.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 
 </body>
 
