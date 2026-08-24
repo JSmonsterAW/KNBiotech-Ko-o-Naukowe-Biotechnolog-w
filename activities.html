@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Aktualności i wydarzenia KNBiotech — warsztaty, konferencje, projekty, wydarzenia naukowe i działalność Koła Naukowego Biotechnologów SGGW."
+    >
+
+    <title>Aktualności | KNBiotech</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+    <script
+        src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+
+</head>
+
+<body class="activities-page">
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="site-header" id="site-header">
+        <nav class="navbar">
+
+            <a class="logo" href="index.html">
+
+                <img
+                    src="Images/LOGOS/LOGO5.svg"
+                    alt="KNBiotech Logo"
+                    class="navbar-logo"
+                >
+
+                <div class="logo-text">
+
+                    <h2>KNBiotech</h2>
+
+                </div>
+
+            </a>
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Otwórz menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">
+                    <img class="home"
+                        src="Images/ICONS/home.png"
+                        alt="KNBiotech Logo"
+                        class="navbar-logo"
+                        >
+                </a>
+                <a href="about.html">O nas</a>
+                <a href="projects.html">Projekty</a>
+                <a href="cooperation.html">Współpraca</a>
+                <a href="activities.html">Aktualności</a>
+                <a href="join.html">Dołącz do nas</a>
+
+                <a class="nav-contact-button" href="contact.html">
+                    Kontakt
+                </a>
+                <!-- <a
+                    class="nav-member-button"
+                    href="/admin/"
+                >
+                    Panel członka
+                </a>  -->              
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="activities-hero">
+
+            <div class="activities-hero-content">
+
+                <div>
+
+                    <p class="eyebrow">
+                        AKTUALNOŚCI I WYDARZENIA
+                    </p>
+
+                    <h1>
+                        Zobacz, czym żyje
+                        <span>KNBiotech.</span>
+                    </h1>
+
+                </div>
+
+                <p class="activities-hero-description">
+                    Dokumentujemy wydarzenia, konferencje,
+                    warsztaty i inicjatywy, w których uczestniczą
+                    członkowie naszego koła — od najnowszych
+                    po najstarsze.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LATEST EVENT
+        ========================== -->
+
+        <section class="section latest-activity-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        NAJNOWSZE WYDARZENIE
+                    </p>
+
+                    <h2>
+                        Ostatnia aktywność
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+                    Najnowsze wydarzenie z udziałem KNBiotech.
+                </p>
+
+            </div>
+
+
+            <article class="latest-activity-card">
+
+                <div class="latest-activity-image">
+
+                    <div class="activity-placeholder">
+                        <span></span>
+                        <p>
+                            Zdjęcie najnowszego wydarzenia
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="latest-activity-content">
+
+                    <div class="activity-meta">
+
+                        <time datetime="">
+                            DATA WYDARZENIA
+                        </time>
+
+                        <span>
+                            KATEGORIA
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Najnowsze wydarzenie KNBiotech
+                    </h3>
+
+                    <p>
+                        W tym miejscu pojawi się krótki opis
+                        najnowszej aktywności koła.
+                    </p>
+
+                    <button
+                        class="activity-expand-button"
+                        type="button"
+                    >
+                        Zobacz wydarzenie
+                        <span>↓</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+             FILTERS
+        ========================== -->
+
+        <section class="section activities-browser-section">
+
+            <div class="activities-browser-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        ARCHIWUM
+                    </p>
+
+                    <h2>
+                        Wszystkie wydarzenia
+                    </h2>
+
+                </div>
+
+
+                <div class="activities-controls">
+
+                    <label class="activities-search">
+
+                        <span>
+                            Szukaj
+                        </span>
+
+                        <input
+                            id="activities-search"
+                            type="search"
+                            placeholder="Wpisz nazwę wydarzenia..."
+                        >
+
+                    </label>
+
+
+                    <label class="activities-sort">
+
+                        <span>
+                            Kolejność
+                        </span>
+
+                        <select id="activities-sort">
+
+                            <option value="newest">
+                                Od najnowszych
+                            </option>
+
+                            <option value="oldest">
+                                Od najstarszych
+                            </option>
+
+                        </select>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="activity-filter-buttons">
+
+                <button
+                    class="activity-filter active"
+                    type="button"
+                    data-filter="all"
+                >
+                    Wszystkie
+                </button>
+
+                <button
+                    class="activity-filter"
+                    type="button"
+                    data-filter="conference"
+                >
+                    Konferencje
+                </button>
+
+                <button
+                    class="activity-filter"
+                    type="button"
+                    data-filter="workshop"
+                >
+                    Warsztaty
+                </button>
+
+                <button
+                    class="activity-filter"
+                    type="button"
+                    data-filter="university"
+                >
+                    Wydarzenia uczelniane
+                </button>
+
+                <button
+                    class="activity-filter"
+                    type="button"
+                    data-filter="education"
+                >
+                    Popularyzacja nauki
+                </button>
+
+                <button
+                    class="activity-filter"
+                    type="button"
+                    data-filter="other"
+                >
+                    Inne
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ACTIVITY ARCHIVE
+        ========================== -->
+
+        <section class="section activities-archive-section">
+
+            <div
+                class="activities-timeline"
+                id="activities-list"
+            >
+
+                <!--
+                    EVENT CARD TEMPLATE
+
+                    Each event that we add later
+                    will use this structure.
+                -->
+                <!-- ========================================= -->
+                <!-- PDKN 2025 -->
+                <!-- ========================================= -->
+
+                <article
+                    class="timeline-event"
+                    id="pdkn-2025"
+                    data-date="2025-12-05"
+                    data-category="conference"
+                >
+
+                    <div class="timeline-marker">
+                        <span></span>
+                    </div>
+
+                    <div class="timeline-date">
+
+                        <time datetime="2025-12-05">
+
+                            <strong>2025</strong>
+
+                            <span>
+                                5–6 grudnia
+                            </span>
+
+                        </time>
+
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <!-- IMAGE -->
+
+                        <div class="timeline-image activity-gallery-column">
+
+                            <!-- MAIN IMAGE -->
+
+                            <img
+                                class="activity-main-photo"
+                                src="Images/GALERIA/PDKN.png"
+                                alt="52. Przegląd Dorobku Kół Naukowych SGGW 2025"
+                            >
+
+
+                            <!-- EXTRA PHOTOS — visible after expansion -->
+
+                            <div class="activity-extra-photos">
+
+                                <img
+                                    src="Images/GALERIA/PDKN5.png"
+                                    alt="KNBiotech podczas PDKN 2025"
+                                >
+
+                                <img
+                                    src="Images/GALERIA/PDKN2.png"
+                                    alt="Prezentacja członków KNBiotech podczas PDKN 2025"
+                                >
+
+                                <img
+                                    src="Images/GALERIA/PDKN3.png"
+                                    alt="Członkowie KNBiotech podczas PDKN 2025"
+                                >
+
+                                <img
+                                    src="Images/GALERIA/PDKN4.png"
+                                    alt="PDKN 2025 na SGGW"
+                                >
+
+                                <img
+                                    src="Images/GALERIA/PDKN6.png"
+                                    alt="KNBiotech podczas PDKN 2025"
+                                >
+
+                                <img
+                                    src="Images/GALERIA/PDKN7.png"
+                                    alt="Prezentacja członków KNBiotech podczas PDKN 2025"
+                                >
+
+                                
+
+                            </div>
+
+                        </div>
+
+                        <!-- CONTENT -->
+
+                        <div class="timeline-content">
+
+                            <div class="activity-meta">
+
+                                <span>
+                                    Konferencja
+                                </span>
+
+                                <span>
+                                    Badania studenckie
+                                </span>
+
+                                <span>
+                                    SGGW
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                52. Przegląd Dorobku Kół Naukowych SGGW
+                                (PDKN 2025)
+                            </h3>
+
+                            <p class="activity-lead">
+                                Członkowie KNBiotech reprezentowali nasze koło
+                                podczas corocznego Przeglądu Dorobku Kół Naukowych
+                                SGGW, prezentując wyniki swoich projektów badawczych.
+                            </p>
+
+                            <div class="activity-highlight">
+
+                                <span class="activity-highlight-icon">
+                                    ✦
+                                </span>
+
+                                <p>
+                                    PDKN to jedno z najważniejszych corocznych wydarzeń
+                                    naukowych SGGW, podczas którego studenckie koła naukowe
+                                    prezentują projekty, wyniki badań i dorobek swoich zespołów.
+                                </p>
+
+                            </div>
+
+
+
+
+
+
+
+
+                            <button
+                                class="activity-expand-button"
+                                type="button"
+                                aria-expanded="false"
+                            >
+                                <span>Więcej informacji</span>
+                                <span class="activity-toggle-arrow">↓</span>
+                            </button>                            
+
+
+
+
+
+
+
+
+
+                            <div class="activity-details">
+
+                                <div class="activity-details-grid">
+
+                                    <div>
+                                        <p class="activity-detail-label">
+                                            Data
+                                        </p>
+                                        <p>
+                                            <strong>5–6 Grudzień 2025</strong>
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <p class="activity-detail-label">
+                                            Rodzaj wydarzenia
+                                        </p>
+                                        <p class="activity-detail-label-1">
+                                            Coroczna konferencja naukowa SGGW
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <p class="activity-detail-label">
+                                            Gospodarz wydarzenia (2025)
+                                        </p>
+                                        <p>
+                                            Koło Naukowe Ekonomistów
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <p class="activity-detail-label">
+                                            Miejsce
+                                        </p>
+                                        <p>
+                                            Wydział Ekonomiczny<br>
+                                            Szkoła Głowna Gospodarstwa Wiejskiego (SGGW)
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="activity-description-block">
+
+                                    <h4>
+                                        O wydarzeniu
+                                    </h4>
+
+                                    <p>
+                                        <strong>Przegląd Dorobku Kół Naukowych (PDKN)</strong> to
+                                        największe coroczne wydarzenie naukowe poświęcone studenckim
+                                        kołom naukowym na Szkole Głównej Gospodarstwa Wiejskiego (SGGW).
+                                        Każdego roku inne koło naukowe pełni rolę organizatora konferencji,
+                                        goszcząc uczestników z całego uniwersytetu.
+                                    </p>
+
+                                    <p>
+                                        Podczas konferencji studenci prezentują wyniki swoich badań,
+                                        projekty inżynierskie, postery naukowe oraz wystąpienia ustne.
+                                        Wydarzenie sprzyja współpracy międzywydziałowej oraz wymianie
+                                        doświadczeń naukowych pomiędzy studentami i opiekunami.                                    
+                                    </p>
+
+                                </div>
+
+                                <div class="activity-description-block">
+
+                                    <h4>
+                                        52. edycja (2025)
+                                    </h4>
+
+                                    <p>
+                                        52. edycję konferencji zorganizowało
+                                        <strong>Studenckie Koło Naukowe Ekonomistów</strong>,
+                                        a wydarzenie odbyło się na Wydziale Ekonomicznym SGGW.
+                                        Konferencja zgromadziła studenckie koła naukowe z całego
+                                        uniwersytetu i obejmowała prezentacje oceniane przez
+                                        komisje akademickie.
+                                    </p>
+
+                                </div>
+
+                                <div class="activity-description-block">
+
+                                    <h4>
+                                        Udział KNBiotech
+                                    </h4>
+
+                                    <p>
+                                        KNBiotech reprezentowało kilku członków naszego koła,
+                                        prezentując wyniki badań naukowych oraz promując działalność
+                                        organizacji podczas jednej z najważniejszych konferencji
+                                        studenckich na SGGW.
+                                    </p>
+
+                                    <ul class="activity-list">
+
+                                        <li>Paulina Goleń</li>
+
+                                        <li>Anna Dziedzic</li>
+
+                                        <li>Antoni Wyskwar</li>
+
+                                        <li>Additional members (to be completed)</li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="activity-description-block">
+
+                                    <h4>
+                                        Statystyki konferencji
+                                    </h4>
+
+                                    <ul class="activity-list">
+
+                                        <li>Coroczna konferencja naukowa obejmująca całą uczelnię</li>
+
+                                        <li>33 studenckie koła naukowe</li>
+
+                                        <li>240 zaprezentowanych prac naukowych</li>
+
+                                        <li>162 prezentacje ustne</li>
+
+                                        <li>78 posterów naukowych</li>
+
+                                        <li>Prezentacje podzielone na 10 sekcji tematycznych</li>
+
+                                        <li>Ocena prac przez komisje akademickie</li>
+
+                                        <li>Nagrody dla najlepszych projektów badawczych</li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="activity-achievement">
+
+                                    <span>
+                                        🏆
+                                    </span>
+
+                                    <div>
+
+                                        <strong>
+                                            Osiągnięcia KNBiotech
+                                        </strong>
+
+                                        <p>
+                                            Członkowie KNBiotech zdobyli wyróżnienia podczas konferencji,
+                                            potwierdzając wysoki poziom prowadzonych badań oraz aktywną
+                                            działalność naszego koła naukowego.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="activity-links">
+
+                                    <a
+                                        href="https://www.sggw.edu.pl/studia-2/kola-naukowe/przeglad-dorobku-kol-naukowych/52-pdkn-2025/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="activity-link"
+                                    >
+                                        🌐 Oficjalna strona SGGW
+                                    </a>
+
+                                    <a
+                                        href="https://www.instagram.com/p/DSCMTJFjRXn/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="activity-link"
+                                    >
+                                        <img
+                                            src="Images/LOGOS/ING.png"
+                                            alt="Instagram"
+                                        >
+                                        Instagram post
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- ========================================= -->
+                <!-- FOODS 2025 -->
+                <!-- ========================================= -->
+                <article
+                    class="timeline-event"
+                    id="iec-foods-2025"
+                    data-date="2025-10-28"
+                    data-category="conference"
+                >
+
+                    <div class="timeline-marker">
+                        <span></span>
+                    </div>
+
+
+                    <div class="timeline-date">
+
+                        <time datetime="2025-10-28">
+
+                            <strong>2025</strong>
+
+                            <span>
+                                28–30 października
+                            </span>
+
+                        </time>
+
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <!-- IMAGE -->
+
+                        <div class="timeline-image">
+
+                            <!--
+                            Replace the path below once you upload
+                            the conference photo to your repository.
+                            -->
+
+                            <img
+                                src="Images/GALERIA/FOODS.png"
+                                alt="Antoni Wyskwar podczas prezentacji wyników badań na 6th International Electronic Conference on Foods"
+                            >
+
+                            <div class="activity-placeholder">
+
+                                <span>🎓</span>
+
+                                <p>
+                                    6th International Electronic Conference on Foods
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CONTENT -->
+
+                        <div class="timeline-content">
+
+                            <div class="activity-meta">
+
+                                <span>
+                                    Konferencja międzynarodowa
+                                </span>
+
+                                <span>
+                                    Prezentacja naukowa
+                                </span>
+
+                                <span>
+                                    Wyróżnienie
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                6th International Electronic Conference on Foods
+                            </h3>
+
+
+                            <p class="activity-lead">
+                                Członek KNBiotech Antoni Wyskwar reprezentował
+                                nasze koło podczas międzynarodowej konferencji
+                                poświęconej naukom o żywności.
+                            </p>
+
+
+                            <div class="activity-highlight">
+
+                                <span class="activity-highlight-icon">
+                                    ✦
+                                </span>
+
+                                <p>
+                                    Prezentacja została wyróżniona spośród
+                                    550 uczestników z całego świata i zakwalifikowana
+                                    do formatu <strong>Flash Poster Presentation</strong>.
+                                </p>
+
+                            </div>
+
+
+                            <a
+                                class="activity-instagram-button"
+                                href="https://www.instagram.com/p/DQ9HudCDdze/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src="Images/LOGOS/ING.png"
+                                    alt="Instagram"
+                                >
+
+                                Zobacz post na Instagramie
+
+                                <span>↗</span>
+                            </a>
+
+                            <!-- EXPANDED CONTENT -->
+
+                            <div class="activity-details">
+
+                                <div class="activity-details-grid">
+
+                                    <div>
+
+                                        <p class="activity-detail-label">
+                                            Reprezentant KNBiotech
+                                        </p>
+
+                                        <p>
+                                            <strong>Antoni Wyskwar</strong>
+                                        </p>
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <p class="activity-detail-label">
+                                            Opiekun naukowy
+                                        </p>
+
+                                        <p>
+                                            dr Jolanta Małajowicz
+                                        </p>
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <p class="activity-detail-label">
+                                            Termin
+                                        </p>
+
+                                        <p>
+                                            28–30 października 2025
+                                        </p>
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <p class="activity-detail-label">
+                                            Charakter wydarzenia
+                                        </p>
+
+                                        <p>
+                                            Międzynarodowa konferencja naukowa
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="activity-description-block">
+
+                                    <h4>
+                                        O prezentowanych badaniach
+                                    </h4>
+
+                                    <p>
+                                        Podczas konferencji zaprezentowano wyniki badań
+                                        prowadzonych w ramach projektu
+                                        <strong>
+                                            „Powłoki i folie jadalne typu smart jako
+                                            ekologiczna alternatywa dla plastiku”
+                                        </strong>.
+                                    </p>
+
+                                    <p>
+                                        Prezentowana praca dotyczyła modelowania poziomu
+                                        inhibicji bakterii <em>Bacillus subtilis</em>
+                                        przy zastosowaniu filmów pektynowych wzbogaconych
+                                        γ-dekalaktonem.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="activity-research-title">
+
+                                    <span>
+                                        TEMAT PREZENTACJI
+                                    </span>
+
+                                    <p>
+                                        “Modeling studies on the level of inhibition
+                                        using gamma-decalactone-enriched pectin films
+                                        against Bacillus subtilis”
+                                    </p>
+
+                                </div>
+
+
+                                <div class="activity-achievement">
+
+                                    <span>
+                                        🏅
+                                    </span>
+
+                                    <div>
+
+                                        <strong>
+                                            Wyróżnienie
+                                        </strong>
+
+                                        <p>
+                                            Praca została wybrana do prezentacji
+                                            Flash Poster Presentation spośród około
+                                            550 uczestników z całego świata.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div
+                class="activities-empty-state"
+                id="activities-empty-state"
+                hidden
+            >
+
+                <p>
+                    Nie znaleziono wydarzeń spełniających kryteria.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HISTORY END
+        ========================== -->
+
+        <section class="activities-history-end">
+
+            <div class="activities-history-end-content">
+
+                <span>
+                    ↓
+                </span>
+
+                <p class="eyebrow">
+                    POCZĄTKI KNBIOTECH
+                </p>
+
+                <h2>
+                    Tu kończy się nasze archiwum.
+                </h2>
+
+                <p>
+                    Wraz z rozwojem strony będziemy dodawać
+                    wcześniejsze wydarzenia i dokumentować
+                    historię działalności koła.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a class="logo footer-logo" href="index.html">
+
+                    <div class="footer-logo-card">
+                        <div class="footer-logo-image">
+                            <img
+                                src="Images/LOGOS/LOGO5.svg"
+                                alt="KNBiotech logo"
+                                class="footer-logo-image"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>KNBiotech</strong>
+                        <span>Koło Naukowe Biotechnologów</span>
+                    </div>
+
+                </a>
+
+                <p>
+                    Nauka, współpraca i rozwój studentów zainteresowanych
+                    biotechnologią.
+                </p>
+
+            <div class="footer-follow">
+
+                <h3>Follow KNBiotech</h3>
+
+                <div class="footer-social">
+
+                    <a
+                        href="https://www.instagram.com/knbiotech8/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-card">
+
+                        <img
+                            src="Images/LOGOS/ING.png"
+                            alt="Instagram"
+                            class="social-icon"
+                        >
+
+                        <div class="social-text">
+
+                            <strong>Instagram</strong>
+
+                            <span>@knbiotech8</span>
+
+                        </div>
+
+                    </a>
+
+                    <a
+                        href="https://www.facebook.com/KNBiotech?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-card">
+
+                        <img
+                            src="Images/LOGOS/FB1.png"
+                            alt="Facebook"
+                            class="social-icon"
+                        >
+
+                        <div class="social-text">
+
+                            <strong>Facebook</strong>
+
+                            <span>KNBiotech</span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            </div>
+
+                <div class="footer-column">
+
+                    <h3>Nawigacja</h3>
+
+                    <a href="about.html">O nas</a>
+                    <a href="projects.html">Projekty</a>
+                    <a href="cooperation.html">Współpraca</a>
+                    <a href="activities.html">Aktualności</a>
+                    
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>KNBiotech</h3>
+
+                    <a href="join.html">Dołącz do nas</a>
+                    <a href="contact.html">Kontakt</a>
+                    <a href="#">Polityka prywatności</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 KNBiotech. Wszelkie prawa zastrzeżone.
+                </p>
+
+                <p>
+                    Strona Koła Naukowego Biotechnologów
+                </p>
+
+            </div>
+
+    </footer>
+
+
+    <button
+        class="back-to-top"
+        id="back-to-top"
+        type="button"
+        aria-label="Wróć na górę strony"
+    >
+        ↑
+    </button>
+
+</body>
+
+</html>
