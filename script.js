@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initialiseProjectLibrary();
     initialiseCitationButtons();
     initialiseLinkedProject();
+    initialiseActivityArchive();
     /*initialiseMembershipForm();*/
 });
 
@@ -642,4 +643,67 @@ document.addEventListener("DOMContentLoaded", function () {
 
         window.location.assign(mailtoLink);
     });
+});
+
+
+
+
+function initialiseActivityArchive() {
+
+    const buttons =
+        document.querySelectorAll(".activity-details-button");
+
+    buttons.forEach((button) => {
+
+        button.addEventListener("click", () => {
+
+            const event =
+                button.closest(".timeline-event");
+
+            if (!event) {
+                return;
+            }
+
+            event.classList.toggle("is-open");
+
+            const isOpen =
+                event.classList.contains("is-open");
+
+            button.firstChild.textContent =
+                isOpen
+                    ? "Zwiń wydarzenie "
+                    : "Czytaj więcej ";
+
+        });
+
+    });
+
+}
+
+
+
+document.querySelectorAll(".activity-expand-button").forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+        const event = button.closest(".timeline-event");
+
+        if (!event) return;
+
+        event.classList.toggle("is-open");
+
+        const open = event.classList.contains("is-open");
+
+        button.setAttribute("aria-expanded", open);
+
+        const label = button.querySelector("span:first-child");
+
+        if (label) {
+            label.textContent = open
+                ? "Mniej informacji"
+                : "Więcej informacji";
+        }
+
+    });
+
 });
