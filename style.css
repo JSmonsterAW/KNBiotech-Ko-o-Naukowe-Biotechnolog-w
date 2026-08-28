@@ -1,14 +1,6 @@
 /* ==============================
    BASIC SETTINGS
 ============================== */
-.navbar-logo-icon {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-    transition:
-        width 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-        height 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-}
 
 :root {
     --primary: #087f5b;
@@ -507,6 +499,15 @@ textarea {
 .navbar-logo {
     width: 80px;
     height: 80px;
+    object-fit: contain;
+    transition:
+        width 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        height 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.navbar-logo-icon {
+    width: 45px;
+    height: 45px;
     object-fit: contain;
     transition:
         width 0.45s cubic-bezier(0.22, 1, 0.36, 1),
@@ -1822,7 +1823,7 @@ textarea {
     transition: transform 0.5s;
 }
 
-/*.join-photo:hover {
+.join-photo:hover {
     transform: translateY(-6px);
     box-shadow:
         0 32px 65px rgba(0, 0, 0, 0.28);
@@ -1830,7 +1831,7 @@ textarea {
 
 .join-photo:hover img {
     transform: scale(1.05);
-}*/
+}
 
 @media (max-width: 1000px) {
 
@@ -5785,6 +5786,10 @@ a.sponsor-logo:hover img {
 
 /* Steps */
 
+/* ==========================================
+   JOIN STEPS
+========================================== */
+
 .join-steps-section {
     padding-top: 105px;
     padding-bottom: 105px;
@@ -5942,6 +5947,13 @@ a.sponsor-logo:hover img {
         line-height: 1.55;
     }
 }
+
+
+
+
+
+
+
 
 
 /* Form */
@@ -6525,6 +6537,8 @@ a.sponsor-logo:hover img {
 
 
 
+
+
 /* ==========================================
    CONTACT PAGE
 ========================================== */
@@ -6661,7 +6675,19 @@ a.sponsor-logo:hover img {
 }
 
 
-/* Contact people */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Contact people */
 .contact-people-section {
@@ -6784,14 +6810,19 @@ a.sponsor-logo:hover img {
 
 .contact-social-buttons{
     margin-top: 0;
+
     display:grid;
+
     gap:10px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    
     width: 100%;
 }
 
 
 .contact-social-buttons a {
+    
+    
     padding: 13px 13px;
 
     display: flex;
@@ -6814,10 +6845,12 @@ a.sponsor-logo:hover img {
     border-color: var(--primary);
     color: var(--primary);
 }
-
 .contact-social-buttons img {
     width: 31px;
     height: 31px;
+
+    
+
     object-fit: contain;
 }
 
@@ -6856,21 +6889,207 @@ a.sponsor-logo:hover img {
 
     .contact-social-buttons a {
         min-height: 68px;
+
         padding: 12px 14px;
+
         gap: 10px;
+
         font-size: 15px;
-    } 
-   
+    }
+    
     .contact-social-buttons img {
         width: 34px;
         height: 34px;
         flex-basis: 34px;
     }
+   
 }
 
 
 
 
+
+
+
+/*
+
+
+.contact-person-card{
+
+    display:flex;
+    flex-direction:column;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+    border-radius:30px;
+
+    overflow:hidden;
+
+    min-height:430px;
+
+    padding:0;
+}
+.contact-person-content{
+
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
+
+    padding:42px 36px 36px;
+}
+
+.contact-person-card > a,
+.contact-social-buttons{
+
+    margin-top:auto;
+}
+.contact-person-header{
+
+    background:linear-gradient(
+        135deg,
+        #0b7c5c,
+        #12c567
+    );
+
+    padding:40px 28px;
+
+    text-align:center;
+
+    border-radius:0 0 42px 42px;
+}
+.contact-person-header h3{
+
+    margin:0;
+
+    color:white;
+
+    font-size:48px;
+
+    line-height:1.1;
+}
+.contact-person-role{
+
+    margin:0 0 16px;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:800;
+
+    letter-spacing:1.4px;
+
+    text-transform:uppercase;
+}
+.contact-person-card h3{
+
+    margin:0 0 18px;
+
+    font-size:26px;
+
+    line-height:1.15;
+}
+.contact-person-card > p:not(.contact-person-role) {
+    margin: 0 0 25px;
+
+    color: var(--text-light);
+    line-height: 1.7;
+}
+.contact-person-card > a{
+
+    margin-top:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    background:#f6faf8;
+
+    border:1px solid var(--border);
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    font-weight:700;
+}
+.contact-person-card > a span {
+    font-size: 20px;
+
+    transition: transform 0.25s ease;
+}
+.contact-person-card > a:hover span {
+    transform: translate(4px, -4px);
+}
+
+.contact-social-buttons a:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.contact-social-buttons img {
+    width: 31px;
+    height: 31px;
+
+    object-fit: contain;
+}
+@media (max-width:1000px){
+
+.contact-people-grid{
+    grid-template-columns:1fr;
+}
+
+.contact-person-card{
+
+    padding:
+        28px
+        22px
+        28px
+        96px;
+
+    min-height:auto;
+}
+
+.contact-person-number{
+
+    width:70px;
+
+    font-size:24px;
+
+    border-radius:
+        22px 0 0 22px;
+}
+
+}
+@media (max-width:768px){
+
+    .contact-person-header{
+
+        padding:28px 20px;
+    }
+
+    .contact-person-header h3{
+
+        font-size:34px;
+    }
+
+    .contact-person-role{
+
+        font-size:13px;
+    }
+
+    .contact-person-content{
+
+        padding:28px 24px 24px;
+    }
+
+}
+*/
 
 
 
@@ -7506,6 +7725,12 @@ a.sponsor-logo:hover img {
 
 
 
+
+
+
+
+
+
 /* ==========================================
    ACTIVITIES PAGE
 ========================================== */
@@ -8023,21 +8248,17 @@ a.sponsor-logo:hover img {
         minmax(250px, 0.7fr)
         minmax(0, 1.3fr);
 
+    
     overflow: hidden;
-
     background: white;
-
     border: 1px solid var(--border);
-
     border-radius: 26px;
-
     box-shadow:
         0 16px 42px rgba(20, 50, 40, 0.07);
 }
 
 .timeline-image {
     min-height: 310px;
-
     background: #eaf6f1;
 }
 
@@ -8626,7 +8847,26 @@ a.sponsor-logo:hover img {
 
 /* ==========================================================
    Card
-========================================================== */
+========================================================== 
+
+.activity-card{
+
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:45px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 18px 45px rgba(20,50,40,.06);
+
+}
+*/
 
 
 
@@ -9004,3 +9244,75 @@ a.sponsor-logo:hover img {
 
 }
 
+
+.activity-slider{
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    border-radius:26px;
+}
+
+.activity-slider-track{
+    display:flex;
+    transition:transform .45s ease;
+}
+
+.activity-slider-track img{
+    width:100%;
+    flex-shrink:0;
+    object-fit:cover;
+    display:block;
+}
+
+
+
+.slider-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:38px;
+    height:38px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.85);
+    cursor:pointer;
+    font-size:22px;
+    font-weight:bold;
+    color:#222;
+    z-index:10;
+    transition:.2s;
+}
+
+.slider-btn:hover{
+    background:white;
+}
+
+.slider-btn.prev{
+    left:12px;
+}
+
+.slider-btn.next{
+    right:12px;
+}
+
+
+.slider-dots{
+    position:absolute;
+    left:50%;
+    bottom:14px;
+    transform:translateX(-50%);
+    display:flex;
+    gap:8px;
+}
+
+.slider-dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:rgba(255,255,255,.6);
+    cursor:pointer;
+}
+
+.slider-dot.active{
+    background:white;
+}
