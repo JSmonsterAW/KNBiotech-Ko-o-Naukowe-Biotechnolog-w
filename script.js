@@ -648,6 +648,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
+
 function initialiseActivityArchive() {
 
     const buttons =
@@ -705,5 +710,58 @@ document.querySelectorAll(".activity-expand-button").forEach((button) => {
         }
 
     });
+
+});
+
+
+
+
+
+
+
+document.querySelectorAll(".activity-slider").forEach(slider=>{
+
+    const track = slider.querySelector(".activity-slider-track");
+    const slides = track.querySelectorAll("img");
+
+    const prev = slider.querySelector(".prev");
+    const next = slider.querySelector(".next");
+    const dotsContainer = slider.querySelector(".slider-dots");
+
+    let current = 0;
+
+    slides.forEach((_,i)=>{
+        const dot = document.createElement("div");
+        dot.className = "slider-dot";
+        if(i===0) dot.classList.add("active");
+
+        dot.onclick=()=>{
+            current=i;
+            update();
+        };
+
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll(".slider-dot");
+
+    function update(){
+
+        track.style.transform=`translateX(-${current*100}%)`;
+
+        dots.forEach(dot=>dot.classList.remove("active"));
+        dots[current].classList.add("active");
+
+    }
+
+    next.onclick=()=>{
+        current=(current+1)%slides.length;
+        update();
+    }
+
+    prev.onclick=()=>{
+        current=(current-1+slides.length)%slides.length;
+        update();
+    }
 
 });
