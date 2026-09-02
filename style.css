@@ -8240,25 +8240,34 @@ a.sponsor-logo:hover img {
 }
 
 .timeline-card {
-    margin-left: 25px;
-
     display: grid;
 
     grid-template-columns:
-        minmax(250px, 0.7fr)
-        minmax(0, 1.3fr);
+        minmax(340px, 0.72fr)
+        minmax(0, 1.28fr);
 
-    
+    align-items: stretch;
+
     overflow: hidden;
-    background: white;
+
+    background: #fff;
     border: 1px solid var(--border);
     border-radius: 26px;
+
     box-shadow:
         0 16px 42px rgba(20, 50, 40, 0.07);
 }
 
-.timeline-image {
-    min-height: 310px;
+.timeline-image.activity-gallery-column {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 0;
+
+    overflow: hidden;
+
     background: #eaf6f1;
 }
 
@@ -9245,23 +9254,46 @@ a.sponsor-logo:hover img {
 }
 
 
-.activity-slider{
-    position:relative;
-    overflow:hidden;
-    width:100%;
-    border-radius:26px;
+/* Slider occupies ALL available space */
+
+.activity-slider {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
 }
 
-.activity-slider-track{
-    display:flex;
-    transition:transform .45s ease;
+
+/* Sliding row */
+
+.activity-slider-track {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.45s ease;
 }
 
-.activity-slider-track img{
-    width:100%;
-    flex-shrink:0;
-    object-fit:cover;
-    display:block;
+
+/* Every image fills the whole left panel */
+
+.activity-slider-track img {
+    flex: 0 0 100%;
+
+    width: 100%;
+    height: 100%;
+
+    min-width: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 
@@ -9315,4 +9347,63 @@ a.sponsor-logo:hover img {
 
 .slider-dot.active{
     background:white;
+}
+
+
+
+
+
+
+
+
+
+
+.activities-empty-message {
+
+    margin: 50px auto 100px;
+
+    padding: 55px 30px;
+
+    max-width: 650px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 26px;
+
+}
+
+.activities-empty-message[hidden] {
+    display: none;
+}
+
+.activities-empty-message span {
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 40px;
+
+}
+
+.activities-empty-message h3 {
+
+    margin: 0 0 10px;
+
+    color: var(--text);
+
+    font-size: 28px;
+
+}
+
+.activities-empty-message p {
+
+    margin: 0;
+
+    color: var(--text-light);
+
 }
