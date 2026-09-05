@@ -765,3 +765,175 @@ document.querySelectorAll(".activity-slider").forEach(slider=>{
     }
 
 });
+
+
+
+
+
+
+/* ==========================================================
+   AUTOMATIC LATEST EVENT
+========================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const events = Array.from(
+        document.querySelectorAll(".timeline-event")
+    );
+
+    if (!events.length) return;
+
+
+    /* Sort events by date — newest first */
+
+    events.sort((a, b) => {
+
+        const dateA = new Date(a.dataset.date);
+        const dateB = new Date(b.dataset.date);
+
+        return dateB - dateA;
+
+    });
+
+
+    const latestEvent = events[0];
+
+
+    /* -----------------------------------------
+       GET INFORMATION FROM EVENT
+    ----------------------------------------- */
+
+    const eventTitle =
+        latestEvent.querySelector("h3");
+
+    const eventDescription =
+        latestEvent.querySelector(".activity-lead");
+
+    const eventImage =
+        latestEvent.querySelector(
+            ".activity-slider-track img, .timeline-image img"
+        );
+
+    const eventDate =
+        latestEvent.dataset.date;
+
+    const eventCategories =
+        latestEvent.querySelectorAll(".activity-meta span");
+
+
+    /* -----------------------------------------
+       LATEST CARD ELEMENTS
+    ----------------------------------------- */
+
+    const latestTitle =
+        document.querySelector("#latest-event-title");
+
+    const latestDescription =
+        document.querySelector("#latest-event-description");
+
+    const latestImage =
+        document.querySelector("#latest-event-image");
+
+    const latestDate =
+        document.querySelector("#latest-event-date");
+
+    const latestCategory =
+        document.querySelector("#latest-event-category");
+
+    const latestLink =
+        document.querySelector("#latest-event-link");
+
+
+    /* -----------------------------------------
+       TITLE
+    ----------------------------------------- */
+
+    if (latestTitle && eventTitle) {
+
+        latestTitle.textContent =
+            eventTitle.textContent.trim();
+
+    }
+
+
+    /* -----------------------------------------
+       DESCRIPTION
+    ----------------------------------------- */
+
+    if (latestDescription && eventDescription) {
+
+        latestDescription.textContent =
+            eventDescription.textContent.trim();
+
+    }
+
+
+    /* -----------------------------------------
+       IMAGE
+    ----------------------------------------- */
+
+    if (latestImage && eventImage) {
+
+        latestImage.src =
+            eventImage.getAttribute("src");
+
+        latestImage.alt =
+            eventImage.getAttribute("alt") ||
+            eventTitle?.textContent.trim() ||
+            "Najnowsze wydarzenie KNBiotech";
+
+    }
+
+
+    /* -----------------------------------------
+       DATE
+    ----------------------------------------- */
+
+    if (latestDate && eventDate) {
+
+        const date =
+            new Date(eventDate + "T12:00:00");
+
+        latestDate.textContent =
+            new Intl.DateTimeFormat(
+                "pl-PL",
+                {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric"
+                }
+            ).format(date);
+
+    }
+
+
+    /* -----------------------------------------
+       CATEGORY
+    ----------------------------------------- */
+
+    if (
+        latestCategory &&
+        eventCategories.length
+    ) {
+
+        latestCategory.textContent =
+            eventCategories[0].textContent.trim();
+
+    }
+
+
+    /* -----------------------------------------
+       LINK TO EVENT
+    ----------------------------------------- */
+
+    if (
+        latestLink &&
+        latestEvent.id
+    ) {
+
+        latestLink.href =
+            "#" + latestEvent.id;
+
+    }
+
+});
