@@ -8017,6 +8017,11 @@ a.sponsor-logo:hover img {
 }
 
 
+.latest-activity-button {
+    margin-top: 28px;
+}
+
+
 .latest-activity-button:hover {
     background: #066e4e;
 
