@@ -550,10 +550,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const email =
             document.getElementById("email")?.value.trim() || "";
 
-        const phone =
-            document.getElementById("phone")?.value.trim() ||
-            "Nie podano";
-
         const faculty =
             document.getElementById("faculty")?.value.trim() || "";
 
@@ -575,10 +571,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const motivation =
             document.getElementById("motivation")?.value.trim() || "";
 
-        const availability =
-            document.getElementById("availability")?.value.trim() ||
-            "Nie podano";
-
         const selectedInterests = Array.from(
             membershipForm.querySelectorAll(
                 'input[name="interests"]:checked'
@@ -599,7 +591,6 @@ document.addEventListener("DOMContentLoaded", function () {
             "",
             `Imię i nazwisko: ${fullName}`,
             `Adres e-mail: ${email}`,
-            `Numer telefonu: ${phone}`,
             `Wydział: ${faculty}`,
             `Kierunek studiów: ${studyProgramme}`,
             `Rok studiów: ${studyYear}`,
@@ -618,10 +609,6 @@ document.addEventListener("DOMContentLoaded", function () {
             "CO CHCIAŁABYM/CHCIAŁBYM ROBIĆ W KNBIOTECH?",
             "",
             motivation,
-            "",
-            "PRZYBLIŻONA DOSTĘPNOŚĆ",
-            "",
-            availability,
             "",
             "Pozdrawiam,",
             fullName
