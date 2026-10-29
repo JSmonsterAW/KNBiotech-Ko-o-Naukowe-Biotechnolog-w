@@ -31,117 +31,9 @@
       gtag('config', 'G-J8CZ796FXN');
     </script>
     
-
-    <!-- Styles used only by this join.html maintenance notice. -->
-    <style id="knb-maintenance-styles">
-        #knb-maintenance { display: none; }
-        body[data-join-maintenance="on"] #knb-join-content { display: none !important; }
-        body[data-join-maintenance="on"] #knb-maintenance {
-            display: grid;
-            place-items: center;
-            min-height: 65vh;
-            padding: clamp(7rem, 14vw, 10rem) 1rem clamp(3rem, 7vw, 6rem);
-            background: radial-gradient(ellipse at top, #d9f5e6, #f5fbf7 70%);
-            color: #153e30;
-            font-family: inherit;
-            box-sizing: border-box;
-        }
-        #knb-maintenance *, #knb-maintenance *::before,
-        #knb-maintenance *::after { box-sizing: border-box; }
-        #knb-maintenance .knb-maintenance-card {
-            width: 100%;
-            max-width: 46rem;
-            padding: clamp(1.5rem, 5vw, 3.5rem);
-            border: 1px solid #c9e5d6;
-            border-radius: 1.75rem;
-            background: #fff;
-            box-shadow: 0 20px 60px rgb(21 62 48 / 8%);
-            text-align: center;
-        }
-        #knb-maintenance .knb-maintenance-icon {
-            display: grid;
-            place-items: center;
-            width: 4.5rem;
-            height: 4.5rem;
-            margin: 0 auto 1.5rem;
-            border-radius: 1.25rem;
-            background: #e0f5e9;
-            color: #216b49;
-        }
-        #knb-maintenance .knb-maintenance-label {
-            margin: 0 0 .75rem;
-            color: #286347;
-            font-size: .75rem;
-            font-weight: 700;
-            letter-spacing: .14em;
-            line-height: 1.6;
-        }
-        #knb-maintenance h1 {
-            margin: 0 0 1rem;
-            color: #153e30;
-            font-size: clamp(2rem, 6vw, 3.5rem);
-            line-height: 1.12;
-            letter-spacing: -.035em;
-            overflow-wrap: anywhere;
-        }
-        #knb-maintenance .knb-maintenance-description {
-            max-width: 35rem;
-            margin: 0 auto;
-            color: #486256;
-            font-size: 1.0625rem;
-            line-height: 1.75;
-        }
-        #knb-maintenance .knb-maintenance-actions {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: .75rem;
-            margin-top: 2rem;
-        }
-        #knb-maintenance .knb-maintenance-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 48px;
-            padding: .85rem 1.25rem;
-            border: 1px solid #216b49;
-            border-radius: .875rem;
-            background: #216b49;
-            color: #fff;
-            font-size: 1rem;
-            font-weight: 600;
-            line-height: 1.4;
-            text-decoration: none;
-        }
-        #knb-maintenance .knb-maintenance-link-secondary {
-            background: #f0faf4;
-            border-color: #c9e5d6;
-            color: #21583e;
-        }
-        #knb-maintenance .knb-maintenance-link:hover {
-            background: #184d35;
-            border-color: #184d35;
-            color: #fff;
-        }
-        #knb-maintenance .knb-maintenance-link:focus-visible {
-            outline: 3px solid #216b49;
-            outline-offset: 4px;
-        }
-        #knb-maintenance .knb-maintenance-note {
-            margin: 1.5rem 0 0;
-            color: #486256;
-            font-size: .875rem;
-            line-height: 1.6;
-        }
-        @media (max-width: 480px) {
-            #knb-maintenance .knb-maintenance-actions { flex-direction: column; }
-            #knb-maintenance .knb-maintenance-link { width: 100%; }
-        }
-    </style>
-
 </head>
 
-<body class="page-home" data-join-maintenance="on">
+<body class="page-home">
 
     <!-- =========================
          NAVIGATION
@@ -208,32 +100,7 @@
     </header>
 
 
-    <!-- Change data-join-maintenance="on" to "off" on <body> to restore the join page. -->
-    <main id="knb-maintenance" aria-labelledby="knb-maintenance-title" lang="pl">
-        <section class="knb-maintenance-card">
-            <div class="knb-maintenance-icon" aria-hidden="true">
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="M9 8v8M15 8v8" />
-                </svg>
-            </div>
-            <p class="knb-maintenance-label">KNBIOTECH · DOŁĄCZ DO NAS</p>
-            <h1 id="knb-maintenance-title">Przerwa techniczna</h1>
-            <p class="knb-maintenance-description">
-                Strona dołączania do KNBiotech jest chwilowo niedostępna
-                z przyczyn technicznych. Zapraszamy ponownie później.
-                Jeśli chcesz zapytać o członkostwo, skontaktuj się z nami.
-            </p>
-            <div class="knb-maintenance-actions">
-                <a class="knb-maintenance-link" href="contact.html">Skontaktuj się z nami</a>
-                <a class="knb-maintenance-link knb-maintenance-link-secondary" href="index.html">Wróć na stronę główną</a>
-            </div>
-            <p class="knb-maintenance-note">Dziękujemy za cierpliwość!</p>
-        </section>
-    </main>
-
-    <main id="knb-join-content">
+    <main>
 
         <!-- =====================================
              HERO
@@ -326,6 +193,17 @@
 
                 <article>
                     <span>01</span>
+                    <h3>Pobierz i wypełnij deklarację</h3>
+
+                    <p>
+                        Wypełnienie deklaracji członkowskiej jest wymagane
+                        do formalnego przyjęcia w poczet członków KNBiotech.
+                    </p>
+
+                </article>
+
+                <article>
+                    <span>02</span>
                     <h3>Wypełnij formularz</h3>
 
                     <p>
@@ -334,29 +212,85 @@
                     </p>
                 </article>
 
-                <article>
-                    <span>02</span>
-                    <h3>Pobierz deklarację</h3>
 
-                    <p>
-                        Wybierz polską lub angielską wersję
-                        deklaracji członkowskiej.
-                    </p>
-
-                </article>
 
                 <article>
                     <span>03</span>
-                    <h3>Poczekaj na kontakt</h3>
+                    <h3>Dostarcz deklarację</h3>
 
                     <p>
-                        Członkowie zarządu skontaktują się z Tobą
-                        w sprawie kolejnych kroków.
+                        Dostarcz wypełnioną deklarację do zarządu koła osobiście lub wyślij skan na adres e-mail: <a href="mailto:s226911@sggw.edu.pl">s226911@sggw.edu.pl</a>
                     </p>
                 </article>
             </div>
         </section>
 
+
+
+        <!-- =====================================
+
+             DECLARATIONS
+
+        ====================================== -->
+        <section
+            class="section declarations-section"
+            id="declarations"
+        >
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">
+                        DOKUMENTY
+                    </p>
+
+                    <h2>
+                        Pobierz deklarację członkowską
+                    </h2>
+                </div>
+
+                <p class="section-description">
+                    Wybierz odpowiednią wersję językową,
+                    uzupełnij dokument i przekaż go zarządowi koła.
+                </p>
+
+            </div>
+
+            <div class="declaration-grid">
+                <a
+                    class="declaration-card"
+                    href="JOIN/deklaracja-członka-2.docx"
+                    download
+                >
+
+                    <div class="declaration-icon" aria-hidden="true">
+                        PL
+                    </div>
+
+                    <div>
+                        <p>WERSJA POLSKA</p>
+                        <h3>Deklaracja członkowska</h3>
+                        <span>Pobierz plik DOCX ↓</span>
+                    </div>
+                </a>
+
+                <a
+                    class="declaration-card"
+                    href="JOIN/membership_declaration_en.docx"
+                    download
+                >
+
+                    <div class="declaration-icon" aria-hidden="true">
+                        EN
+                    </div>
+
+                    <div>
+                        <p>ENGLISH VERSION</p>
+                        <h3>Membership declaration</h3>
+                        <span>Download DOCX ↓</span>
+                    </div>
+                </a>
+            </div>
+        </section>
         <!-- =====================================
              APPLICATION FORM
         ====================================== -->
@@ -731,71 +665,7 @@
             </div>
         </section>
 
-        <!-- =====================================
 
-             DECLARATIONS
-
-        ====================================== -->
-
-        <section
-            class="section declarations-section"
-            id="declarations"
-        >
-
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">
-                        DOKUMENTY
-                    </p>
-
-                    <h2>
-                        Pobierz deklarację członkowską
-                    </h2>
-                </div>
-
-                <p class="section-description">
-                    Wybierz odpowiednią wersję językową,
-                    uzupełnij dokument i przekaż go zarządowi koła.
-                </p>
-
-            </div>
-
-            <div class="declaration-grid">
-                <a
-                    class="declaration-card"
-                    href="JOIN/deklaracja-członka-2.docx"
-                    download
-                >
-
-                    <div class="declaration-icon" aria-hidden="true">
-                        PL
-                    </div>
-
-                    <div>
-                        <p>WERSJA POLSKA</p>
-                        <h3>Deklaracja członkowska</h3>
-                        <span>Pobierz plik DOCX ↓</span>
-                    </div>
-                </a>
-
-                <a
-                    class="declaration-card"
-                    href="JOIN/membership_declaration_en.docx"
-                    download
-                >
-
-                    <div class="declaration-icon" aria-hidden="true">
-                        EN
-                    </div>
-
-                    <div>
-                        <p>ENGLISH VERSION</p>
-                        <h3>Membership declaration</h3>
-                        <span>Download DOCX ↓</span>
-                    </div>
-                </a>
-            </div>
-        </section>
     </main>
 
 
