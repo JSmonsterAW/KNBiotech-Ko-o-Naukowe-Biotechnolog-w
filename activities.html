@@ -139,6 +139,338 @@
         </section>
 
 
+        
+<style>
+  #pdkn-promo,
+  #pdkn-promo * {
+    box-sizing: border-box;
+  }
+
+  #pdkn-promo {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    width: min(1200px, calc(100% - 32px));
+    margin: 48px auto 64px;
+    padding: 76px 44px 48px;
+    border: 1px solid #ced9c9;
+    border-radius: 28px;
+    background: #fffdf6;
+    color: #294e3b;
+    text-align: center;
+    font-family: inherit;
+    box-shadow: 0 18px 55px rgb(41 78 59 / 9%);
+  }
+
+  #pdkn-promo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background: url("pdkn-assets/pattern.png") center / 700px auto;
+    opacity: .09;
+    pointer-events: none;
+  }
+
+  #pdkn-promo .pdkn-corner {
+    position: absolute;
+    width: 190px;
+    height: 210px;
+    z-index: -1;
+    background: url("pdkn-assets/poster.png") left top / 820px 1025px;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(135deg, #000 45%, transparent 85%);
+    mask-image: linear-gradient(135deg, #000 45%, transparent 85%);
+  }
+
+  #pdkn-promo .pdkn-tl { top: 0; left: 0; }
+  #pdkn-promo .pdkn-tr { top: 0; right: 0; transform: scaleX(-1); }
+  #pdkn-promo .pdkn-bl { bottom: 0; left: 0; transform: scaleY(-1); }
+  #pdkn-promo .pdkn-br { bottom: 0; right: 0; transform: rotate(180deg); }
+
+  #pdkn-promo .pdkn-eyebrow {
+    margin: 0 0 20px;
+    color: #45664e;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+
+  #pdkn-promo h2 {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #35694e;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 5.4vw, 4.2rem);
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: -.025em;
+    text-wrap: balance;
+  }
+
+  #pdkn-promo .pdkn-date {
+    display: block;
+    margin: 26px 0 20px;
+    color: #35694e;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    line-height: 1.3;
+  }
+
+  #pdkn-promo .pdkn-description {
+    max-width: 620px;
+    margin: 0 auto 28px;
+    color: #42594a;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  #pdkn-promo .pdkn-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 100%;
+    min-height: 52px;
+    padding: 15px 26px;
+    border: 1px solid #285c42;
+    border-radius: 999px;
+    background: #285c42;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: background-color .2s ease, transform .2s ease;
+  }
+
+  #pdkn-promo .pdkn-button:hover {
+    background: #19462f;
+    transform: translateY(-2px);
+  }
+
+  #pdkn-promo .pdkn-button:focus-visible {
+    outline: 3px solid #285c42;
+    outline-offset: 5px;
+  }
+
+  #pdkn-promo .pdkn-organizers {
+    position: relative;
+    margin-top: 42px;
+    padding-top: 28px;
+    border-top: 1px solid #cbd7c8;
+  }
+
+  #pdkn-promo .pdkn-label {
+    margin: 0 0 16px;
+    color: #45664e;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+
+  #pdkn-promo .pdkn-main-logo {
+    display: block;
+    width: 118px;
+    height: 118px;
+    margin: 0 auto 26px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+
+  #pdkn-promo .pdkn-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #pdkn-promo .pdkn-logos li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    min-height: 120px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #pdkn-promo .pdkn-logos img {
+    display: block;
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+
+  #pdkn-promo .pdkn-logos .pdkn-wide-logo {
+    width: 135px;
+  }
+
+  /* WBiB logo: a window onto the supplied poster. */
+  #pdkn-promo .pdkn-wbib {
+    display: block;
+    flex: 0 0 116px;
+    width: 116px;
+    height: 124px;
+    background-image: url("pdkn-assets/poster.png");
+    background-repeat: no-repeat;
+    background-size: 655.2px 819.2px;
+    background-position: -510px -338px;
+    mix-blend-mode: multiply;
+  }
+
+  @media (max-width: 600px) {
+    #pdkn-promo {
+      margin: 28px auto 40px;
+      padding: 64px 20px 38px;
+      border-radius: 20px;
+    }
+
+    #pdkn-promo .pdkn-corner {
+      width: 100px;
+      height: 110px;
+      background-size: 440px 550px;
+      opacity: .75;
+    }
+
+    #pdkn-promo .pdkn-eyebrow {
+      font-size: .7rem;
+      letter-spacing: .1em;
+    }
+
+    #pdkn-promo .pdkn-description {
+      font-size: 1rem;
+    }
+
+    #pdkn-promo .pdkn-logos {
+      gap: 16px;
+    }
+
+    #pdkn-promo .pdkn-logos li {
+      width: 120px;
+    }
+
+    #pdkn-promo .pdkn-logos .pdkn-wide-logo {
+      width: 120px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #pdkn-promo .pdkn-button {
+      transition: none;
+    }
+
+    #pdkn-promo .pdkn-button:hover {
+      transform: none;
+    }
+  }
+</style>
+
+<section id="pdkn-promo" aria-labelledby="pdkn-heading" lang="pl">
+  <span class="pdkn-corner pdkn-tl" aria-hidden="true"></span>
+  <span class="pdkn-corner pdkn-tr" aria-hidden="true"></span>
+  <span class="pdkn-corner pdkn-bl" aria-hidden="true"></span>
+  <span class="pdkn-corner pdkn-br" aria-hidden="true"></span>
+
+  <p class="pdkn-eyebrow">KNBiotech zaprasza · PDKN 2026</p>
+
+  <h2 id="pdkn-heading">
+    Przegląd Dorobku<br>Kół Naukowych
+  </h2>
+
+  <time class="pdkn-date" datetime="2026-12-04">
+    4 grudnia 2026
+  </time>
+
+  <p class="pdkn-description">
+    Poznaj projekty, pasje i osiągnięcia studenckich kół naukowych.
+    Spotkajmy się na Przeglądzie Dorobku Kół Naukowych
+    organizowanym przez KNBiotech!
+  </p>
+
+  <a
+    class="pdkn-button"
+    href="https://www.instagram.com/p/De9TPJcjToY/?img_index=1"
+  >
+    Zobacz szczegóły na Instagramie
+    <span aria-hidden="true">↗</span>
+  </a>
+
+  <div class="pdkn-organizers">
+    <p class="pdkn-label">Główny organizator</p>
+
+    <img
+      class="pdkn-main-logo"
+      src="pdkn-assets/knbiotech.png"
+      alt="KNBiotech — Koło Naukowe Biotechnologów"
+      width="118"
+      height="118"
+      decoding="async"
+    >
+
+    <p class="pdkn-label">Współorganizatorzy</p>
+
+    <ul class="pdkn-logos" aria-label="Współorganizatorzy wydarzenia">
+      <li>
+        <img
+          src="pdkn-assets/neoplasma.png"
+          alt="Koło Naukowe Technologów Biomedycznych Neoplasma"
+          width="110"
+          height="110"
+          decoding="async"
+        >
+      </li>
+      <li>
+        <img
+          src="pdkn-assets/eza.png"
+          alt="Studenckie Koło Naukowe Mikrobiologów eza"
+          width="110"
+          height="110"
+          decoding="async"
+        >
+      </li>
+      <li>
+        <img
+          src="pdkn-assets/botanical.png"
+          alt="Sekcja Botaniczna Międzywydziałowego Koła Naukowego Biologów"
+          width="110"
+          height="110"
+          decoding="async"
+        >
+      </li>
+      <li>
+        <img
+          class="pdkn-wide-logo"
+          src="pdkn-assets/nanobiotech.png"
+          alt="Międzywydziałowe Koło Naukowe Nanobiotechnologii SGGW"
+          width="135"
+          height="110"
+          decoding="async"
+        >
+      </li>
+      <li>
+        <span
+          class="pdkn-wbib"
+          role="img"
+          aria-label="Wydział Biologii i Biotechnologii SGGW"
+        ></span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+        
         <!-- =========================
              LATEST EVENT
         ========================== -->
