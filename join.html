@@ -11,12 +11,13 @@
 
     <meta
         name="description"
-        content="Oficjalna strona Koła Naukowego Biotechnologów KNBiotech. Poznaj nasze projekty, działalność naukową, wydarzenia i możliwości dołączenia do koła."
+        content="Dołącz do KNBiotech. Pobierz, wypełnij i podpisz deklarację członkowską, a następnie przekaż ją osobiście Annie Malickiej lub dr inż. Karinie Jasińskiej."
     >
 
-    <title>KNBiotech | Koło Naukowe Biotechnologów</title>
+    <title>Dołącz do nas | KNBiotech</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="join-page.css">
     <link rel="icon" href="Images/LOGOS/knbiotech-favicon-mushroom.ico" type="image/x-icon">
 
     <script src="script.js" defer></script>
@@ -31,117 +32,9 @@
       gtag('config', 'G-J8CZ796FXN');
     </script>
     
-
-    <!-- Styles used only by this join.html maintenance notice. -->
-    <style id="knb-maintenance-styles">
-        #knb-maintenance { display: none; }
-        body[data-join-maintenance="on"] #knb-join-content { display: none !important; }
-        body[data-join-maintenance="on"] #knb-maintenance {
-            display: grid;
-            place-items: center;
-            min-height: 65vh;
-            padding: clamp(7rem, 14vw, 10rem) 1rem clamp(3rem, 7vw, 6rem);
-            background: radial-gradient(ellipse at top, #d9f5e6, #f5fbf7 70%);
-            color: #153e30;
-            font-family: inherit;
-            box-sizing: border-box;
-        }
-        #knb-maintenance *, #knb-maintenance *::before,
-        #knb-maintenance *::after { box-sizing: border-box; }
-        #knb-maintenance .knb-maintenance-card {
-            width: 100%;
-            max-width: 46rem;
-            padding: clamp(1.5rem, 5vw, 3.5rem);
-            border: 1px solid #c9e5d6;
-            border-radius: 1.75rem;
-            background: #fff;
-            box-shadow: 0 20px 60px rgb(21 62 48 / 8%);
-            text-align: center;
-        }
-        #knb-maintenance .knb-maintenance-icon {
-            display: grid;
-            place-items: center;
-            width: 4.5rem;
-            height: 4.5rem;
-            margin: 0 auto 1.5rem;
-            border-radius: 1.25rem;
-            background: #e0f5e9;
-            color: #216b49;
-        }
-        #knb-maintenance .knb-maintenance-label {
-            margin: 0 0 .75rem;
-            color: #286347;
-            font-size: .75rem;
-            font-weight: 700;
-            letter-spacing: .14em;
-            line-height: 1.6;
-        }
-        #knb-maintenance h1 {
-            margin: 0 0 1rem;
-            color: #153e30;
-            font-size: clamp(2rem, 6vw, 3.5rem);
-            line-height: 1.12;
-            letter-spacing: -.035em;
-            overflow-wrap: anywhere;
-        }
-        #knb-maintenance .knb-maintenance-description {
-            max-width: 35rem;
-            margin: 0 auto;
-            color: #486256;
-            font-size: 1.0625rem;
-            line-height: 1.75;
-        }
-        #knb-maintenance .knb-maintenance-actions {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: .75rem;
-            margin-top: 2rem;
-        }
-        #knb-maintenance .knb-maintenance-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 48px;
-            padding: .85rem 1.25rem;
-            border: 1px solid #216b49;
-            border-radius: .875rem;
-            background: #216b49;
-            color: #fff;
-            font-size: 1rem;
-            font-weight: 600;
-            line-height: 1.4;
-            text-decoration: none;
-        }
-        #knb-maintenance .knb-maintenance-link-secondary {
-            background: #f0faf4;
-            border-color: #c9e5d6;
-            color: #21583e;
-        }
-        #knb-maintenance .knb-maintenance-link:hover {
-            background: #184d35;
-            border-color: #184d35;
-            color: #fff;
-        }
-        #knb-maintenance .knb-maintenance-link:focus-visible {
-            outline: 3px solid #216b49;
-            outline-offset: 4px;
-        }
-        #knb-maintenance .knb-maintenance-note {
-            margin: 1.5rem 0 0;
-            color: #486256;
-            font-size: .875rem;
-            line-height: 1.6;
-        }
-        @media (max-width: 480px) {
-            #knb-maintenance .knb-maintenance-actions { flex-direction: column; }
-            #knb-maintenance .knb-maintenance-link { width: 100%; }
-        }
-    </style>
-
 </head>
 
-<body class="page-home" data-join-maintenance="on">
+<body class="page-join">
 
     <!-- =========================
          NAVIGATION
@@ -183,15 +76,14 @@
                 <a href="index.html">
                     <img class="home"
                         src="Images/ICONS/home.png"
-                        alt="KNBiotech Logo"
-                        class="navbar-logo"
+                        alt="Strona główna"
                         >
                 </a>
                 <a href="about.html">O nas</a>
                 <a href="projects.html">Projekty</a>
                 <a href="cooperation.html">Współpraca</a>
                 <a href="activities.html">Aktualności</a>
-                <a href="join.html">Dołącz do nas</a>
+                <a href="join.html" class="active" aria-current="page">Dołącz do nas</a>
 
                 <a class="nav-contact-button" href="contact.html">
                     Kontakt
@@ -208,592 +100,54 @@
     </header>
 
 
-    <!-- Change data-join-maintenance="on" to "off" on <body> to restore the join page. -->
-    <main id="knb-maintenance" aria-labelledby="knb-maintenance-title" lang="pl">
-        <section class="knb-maintenance-card">
-            <div class="knb-maintenance-icon" aria-hidden="true">
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="M9 8v8M15 8v8" />
-                </svg>
-            </div>
-            <p class="knb-maintenance-label">KNBIOTECH · DOŁĄCZ DO NAS</p>
-            <h1 id="knb-maintenance-title">Przerwa techniczna</h1>
-            <p class="knb-maintenance-description">
-                Strona dołączania do KNBiotech jest chwilowo niedostępna
-                z przyczyn technicznych. Zapraszamy ponownie później.
-                Jeśli chcesz zapytać o członkostwo, skontaktuj się z nami.
-            </p>
-            <div class="knb-maintenance-actions">
-                <a class="knb-maintenance-link" href="contact.html">Skontaktuj się z nami</a>
-                <a class="knb-maintenance-link knb-maintenance-link-secondary" href="index.html">Wróć na stronę główną</a>
-            </div>
-            <p class="knb-maintenance-note">Dziękujemy za cierpliwość!</p>
-        </section>
-    </main>
-
-    <main id="knb-join-content">
-
-        <!-- =====================================
-             HERO
-        ====================================== -->
-
-        <section class="join-page-hero">
-            <div class="join-page-hero-content">
-                <div class="join-page-hero-text">
-
-                    <p class="eyebrow">
-                        DOŁĄCZ DO KNBIOTECH
-                    </p>
-
-                    <h1>
-                        Rozwijaj swoje zainteresowania
-                        <span>razem z nami.</span>
-                    </h1>
-
-                    <p>
-                        KNBiotech to miejsce dla osób zainteresowanych
-                        biotechnologią, mikrobiologią, biologią molekularną,
-                        technologią żywności i naukami pokrewnymi.
-                    </p>
-
-                    <div class="join-page-hero-buttons">
-
-                        <a
-                            class="primary-button"
-                            href="#application-form"
-                        >
-                            Wypełnij formularz
-                        </a>
-
-                        <a
-                            class="secondary-button"
-                            href="#declarations"
-                        >
-                            Pobierz deklarację
-                        </a>
+    <main class="join-redesign" id="join-main">
+        <section class="jr-hero" aria-labelledby="join-title">
+            <div class="jr-wrap jr-hero-grid">
+                <div>
+                    <p class="jr-kicker">Dołącz do KNBiotech</p>
+                    <h1 id="join-title">Twoja ciekawość.<br><span>Nasze wspólne projekty.</span></h1>
+                    <p class="jr-lead">Interesujesz się biotechnologią i chcesz rozwijać swoje pasje razem z nami? Aby dołączyć do koła, <strong>wypełnij i podpisz deklarację członkowską, a następnie przekaż ją osobiście w formie papierowej.</strong></p>
+                    <div class="jr-actions">
+                        <a class="jr-button" href="#declarations">Pobierz deklarację ↓</a>
+                        <a class="jr-button jr-button-secondary" href="#przekazanie">Komu przekazać dokument?</a>
                     </div>
                 </div>
-
-                <aside class="join-hero-card">
-
-                    <p class="join-hero-card-label">
-                        CZŁONKOSTWO
-                    </p>
-
-                    <h2>
-                        Co możesz robić w kole?
-                    </h2>
-
-                    <ul>
-                        <li>Realizować projekty badawcze.</li>
-                        <li>Rozwijać umiejętności laboratoryjne.</li>
-                        <li>Uczestniczyć w konferencjach.</li>
-                        <li>Organizować warsztaty i wydarzenia.</li>
-                        <li>Współpracować ze studentami i naukowcami.</li>
-                    </ul>
+                <aside class="jr-paper" aria-labelledby="paper-title">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5h17l8 8v30H12zM29 5v9h8M18 23h13M18 29h13M18 35h8"/></svg>
+                    <p class="jr-kicker">Warunek członkostwa</p>
+                    <h2 id="paper-title">Podpisana deklaracja.<br>Przekazana osobiście.</h2>
+                    <p>Papierowy dokument przekaż przewodniczącej koła, Annie Malickiej, lub bezpośrednio opiekunowi koła, dr inż. Karinie Jasińskiej.</p>
                 </aside>
             </div>
         </section>
-
-        <!-- =====================================
-             STEPS
-        ====================================== -->
-
-        <section class="section join-steps-section">
-            <div class="section-heading">
-                <div>
-
-                    <p class="eyebrow">
-                        JAK DOŁĄCZYĆ?
-                    </p>
-
-                    <h2>
-                        Trzy proste kroki
-                    </h2>
-
-                </div>
-
-                <p class="section-description">
-                    Formularz pozwoli nam poznać Twoje zainteresowania
-                    i zaproponować odpowiednią formę zaangażowania.
-                </p>
-
-            </div>
-
-            <div class="join-steps-grid">
-
-                <article>
-                    <span>01</span>
-                    <h3>Wypełnij formularz</h3>
-
-                    <p>
-                        Podaj podstawowe informacje o sobie,
-                        kierunku studiów i zainteresowaniach.
-                    </p>
-                </article>
-
-                <article>
-                    <span>02</span>
-                    <h3>Pobierz deklarację</h3>
-
-                    <p>
-                        Wybierz polską lub angielską wersję
-                        deklaracji członkowskiej.
-                    </p>
-
-                </article>
-
-                <article>
-                    <span>03</span>
-                    <h3>Poczekaj na kontakt</h3>
-
-                    <p>
-                        Członkowie zarządu skontaktują się z Tobą
-                        w sprawie kolejnych kroków.
-                    </p>
-                </article>
+        <section class="jr-section" aria-labelledby="steps-title">
+            <div class="jr-wrap">
+                <div class="jr-heading"><p class="jr-kicker">Jak dołączyć?</p><h2 id="steps-title">Trzy kroki do zgłoszenia.</h2><p>Przygotuj deklarację i dostarcz jej podpisany, papierowy egzemplarz jednej z wymienionych poniżej osób.</p></div>
+                <ol class="jr-steps">
+                    <li class="jr-step"><span class="jr-number" aria-hidden="true">01</span><h3>Pobierz deklarację</h3><p>Wybierz polską lub angielską wersję dokumentu. Wystarczy wypełnić jedną wersję językową.</p></li>
+                    <li class="jr-step"><span class="jr-number" aria-hidden="true">02</span><h3>Wypełnij i podpisz</h3><p>Uzupełnij wymagane informacje, wydrukuj deklarację i podpisz ją własnoręcznie. Przed przekazaniem sprawdź, czy dokument jest kompletny.</p></li>
+                    <li class="jr-step"><span class="jr-number" aria-hidden="true">03</span><h3>Przekaż osobiście</h3><p>Dostarcz papierową deklarację Annie Malickiej lub dr inż. Karinie Jasińskiej. Przekazanie podpisanego dokumentu jest warunkiem dołączenia do KNBiotech.</p></li>
+                </ol>
             </div>
         </section>
-
-        <!-- =====================================
-             APPLICATION FORM
-        ====================================== -->
-
-        <section
-            class="join-form-section"
-            id="application-form"
-        >
-
-            <div class="join-form-container">
-                <div class="join-form-introduction">
-
-                    <p class="eyebrow">
-                        FORMULARZ ZGŁOSZENIOWY
-                    </p>
-
-                    <h2>
-                        Opowiedz nam trochę o sobie
-                    </h2>
-
-                    <p>
-                        Po wysłaniu formularza otworzy się Twoja aplikacja
-                        pocztowa z przygotowaną wiadomością adresowaną do:
-                    </p>
-
-                    <div class="join-contact-list">
-                        <div>
-                            <strong>Anna Malicka</strong>
-
-                            <a href="mailto:s226911@sggw.edu.pl">
-                                s226911@sggw.edu.pl
-                            </a>
-                        </div>
-
-                        <div>
-                            <strong>Antoni Wyskwar</strong>
-
-                            <a href="mailto:s220956@sggw.edu.pl">
-                                s220956@sggw.edu.pl
-                            </a>
-                        </div>
-                    </div>
+        <section class="jr-section jr-downloads" id="declarations" aria-labelledby="downloads-title">
+            <div class="jr-wrap">
+                <div class="jr-heading"><p class="jr-kicker">Dokumenty do pobrania</p><h2 id="downloads-title">Zacznij od deklaracji.</h2><p>Pobierz wybraną wersję dokumentu, uzupełnij ją i przygotuj podpisany egzemplarz papierowy.</p></div>
+                <div class="jr-grid">
+                    <a class="jr-download" href="JOIN/deklaracja-członka-2.docx" download><span class="jr-language" aria-hidden="true">PL</span><div><h3>Deklaracja członkowska</h3><p>Wersja polska · Pobierz DOCX ↓</p></div></a>
+                    <a class="jr-download" href="JOIN/membership_declaration_en.docx" download lang="en"><span class="jr-language" aria-hidden="true">EN</span><div><h3>Membership declaration</h3><p>English version · Download DOCX ↓</p></div></a>
                 </div>
-
-                <form
-                    class="membership-form"
-                    id="membership-form"
-                >
-
-                    <div class="form-field form-field-full">
-
-                        <label for="full-name">
-                            Imię i nazwisko
-                            <span aria-hidden="true">*</span>
-                        </label>
-
-                        <input
-                            id="full-name"
-                            name="fullName"
-                            type="text"
-                            autocomplete="name"
-                            placeholder="np. Jan Kowalski"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="form-field">
-                        <label for="email">
-                            Adres e-mail
-                            <span aria-hidden="true">*</span>
-                        </label>
-
-                        <input
-                            id="email"
-                            name="email"
-                            type="email"
-                            autocomplete="email"
-                            placeholder="np. student@sggw.edu.pl"
-                            required
-                        >
-                    </div>
-
-                    <!--<div class="form-field">
-                        <label for="phone">
-                            Numer telefonu
-                        </label>
-
-                        <input
-                            id="phone"
-                            name="phone"
-                            type="tel"
-                            autocomplete="tel"
-                            placeholder="Opcjonalnie"
-                        > 
-                    </div>-->
-
-                    <div class="form-field">
-                        <label for="faculty">
-                            Wydział
-                            <span aria-hidden="true">*</span>
-                        </label>
-
-                        <input
-                            id="faculty"
-                            name="faculty"
-                            type="text"
-                            placeholder="np. Wydział Biologii i Biotechnologii"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="form-field">
-                        <label for="study-programme">
-                            Kierunek studiów
-                            <span aria-hidden="true">*</span>
-                        </label>
-
-                        <input
-                            id="study-programme"
-                            name="studyProgramme"
-                            type="text"
-                            placeholder="np. Biotechnologia"
-                            required
-                        >
-
-                    </div>
-
-                    <div class="form-field">
-
-                        <label for="study-year">
-                            Rok studiów
-                        </label>
-
-                        <select
-                            id="study-year"
-                            name="studyYear"
-                        >
-
-                            <option value="">
-                                Wybierz
-                            </option>
-
-                            <option value="1">
-                                1. rok
-                            </option>
-
-                            <option value="2">
-                                2. rok
-                            </option>
-
-                            <option value="3">
-                                3. rok
-                            </option>
-
-                            <option value="4">
-                                4. rok
-                            </option>
-
-                            <option value="5">
-                                5. rok
-                            </option>
-
-                            <option value="inne">
-                                Inny
-                            </option>
-
-                        </select>
-
-                    </div>
-
-                    <div class="form-field">
-
-                        <label for="study-level">
-                            Poziom studiów
-                        </label>
-
-                        <select
-                            id="study-level"
-                            name="studyLevel"
-                        >
-
-                            <option value="">
-                                Wybierz
-                            </option>
-
-                            <option value="licencjackie">
-                                Studia licencjackie
-                            </option>
-
-                            <option value="inżynierskie">
-                                Studia inżynierskie
-                            </option>
-
-                            <option value="magisterskie">
-                                Studia magisterskie
-                            </option>
-
-                            <option value="doktoranckie">
-                                Szkoła doktorska
-                            </option>
-
-                            <option value="inne">
-                                Inne
-                            </option>
-                        </select>
-                    </div>
-
-                    <fieldset class="form-field form-field-full interests-fieldset">
-
-                        <legend>
-                            Obszary, które Cię interesują
-                        </legend>
-
-                        <div class="interest-options">
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="interests"
-                                    value="Mikrobiologia"
-                                >
-                                <span>Mikrobiologia</span>
-                            </label>
-
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="interests"
-                                    value="Biologia molekularna"
-                                >
-                                <span>Biologia molekularna</span>
-                            </label>
-
-                            <label>
-
-                                <input
-                                    type="checkbox"
-                                    name="interests"
-                                    value="Biotechnologia żywności"
-                                >
-                                <span>Biotechnologia żywności</span>
-                            </label>
-
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="interests"
-                                    value="Biotechnologia środowiska"
-                                >
-                                <span>Biotechnologia środowiska</span>
-                            </label>
-
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="interests"
-                                    value="Projekty laboratoryjne"
-                                >
-                                <span>Projekty laboratoryjne</span>
-                            </label>
-
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="interests"
-                                    value="Warsztaty i popularyzacja nauki"
-                                >
-                                <span>Warsztaty i popularyzacja nauki</span>
-                            </label>
-
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="interests"
-                                    value="Konferencje i prezentacje"
-                                >
-                                <span>Konferencje i prezentacje</span>
-                            </label>
-
-                            <label>
-                                <input
-                                    type="checkbox"
-                                    name="interests"
-                                    value="Media społecznościowe i promocja"
-                                >
-                                <span>Promocja i social media</span>
-                            </label>
-                        </div>
-                    </fieldset>
-
-                    <div class="form-field form-field-full">
-                        <label for="experience">
-                            Dotychczasowe doświadczenie
-                        </label>
-
-                        <textarea
-                            id="experience"
-                            name="experience"
-                            rows="5"
-                            placeholder="Napisz krótko o doświadczeniu laboratoryjnym, organizacyjnym, konferencjach lub projektach. Brak doświadczenia nie jest przeszkodą."
-                        ></textarea>
-                    </div>
-
-                    <div class="form-field form-field-full">
-                        <label for="motivation">
-                            Co chciałabyś lub chciałbyś robić w KNBiotech?
-                            <span aria-hidden="true">*</span>
-                        </label>
-
-                        <textarea
-                            id="motivation"
-                            name="motivation"
-                            rows="7"
-                            placeholder="Opisz swoje zainteresowania, pomysł na projekt albo rodzaj działalności, w którą chcesz się zaangażować."
-                            required
-                        ></textarea>
-                    </div>
-
-                    <!--<div class="form-field form-field-full">
-                        <label for="availability">
-                            Przybliżona dostępność
-                        </label>
-
-                        <textarea
-                            id="availability"
-                            name="availability"
-                            rows="3"
-                            placeholder="np. 2–3 godziny tygodniowo, głównie popołudniami"
-                        ></textarea>
-                    </div>-->
-
-                    <label class="form-consent form-field-full">
-                        <input
-                            id="privacy-consent"
-                            type="checkbox"
-                            required
-                        >
-
-                        <span>
-                            Wyrażam zgodę na wykorzystanie podanych informacji
-                            w celu kontaktu dotyczącego członkostwa w KNBiotech.
-                            <strong>*</strong>
-                        </span>
-                    </label>
-
-                    <div class="form-status form-field-full" id="form-status"></div>
-
-                    <div class="form-actions form-field-full">
-                        <button
-                            class="primary-button"
-                            type="submit"
-                        >
-                            Przygotuj wiadomość e-mail
-                        </button>
-
-                        <button
-                            class="form-reset-button"
-                            type="reset"
-                        >
-                            Wyczyść formularz
-                        </button>
-
-                    </div>
-
-                    <p class="form-note form-field-full">
-                        Formularz nie wysyła danych na serwer strony.
-                        Po kliknięciu przycisku zostanie otwarta Twoja
-                        aplikacja pocztowa.
-                    </p>
-                </form>
+                <p class="jr-note"><strong>Deklarację składamy w formie papierowej.</strong> Skan przesłany e-mailem nie zastępuje osobistego przekazania podpisanego dokumentu.</p>
             </div>
         </section>
-
-        <!-- =====================================
-
-             DECLARATIONS
-
-        ====================================== -->
-
-        <section
-            class="section declarations-section"
-            id="declarations"
-        >
-
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">
-                        DOKUMENTY
-                    </p>
-
-                    <h2>
-                        Pobierz deklarację członkowską
-                    </h2>
+        <section class="jr-section" id="przekazanie" aria-labelledby="recipients-title">
+            <div class="jr-wrap">
+                <div class="jr-heading"><p class="jr-kicker">Przekazanie deklaracji</p><h2 id="recipients-title">Wybierz jedną z dwóch osób.</h2><p>Podpisaną deklarację możesz przekazać przewodniczącej lub bezpośrednio opiekunowi koła.</p></div>
+                <div class="jr-grid">
+                    <article class="jr-person"><p class="jr-kicker">Przewodnicząca koła</p><h3>Anna Malicka</h3><p>Przekaż Annie wypełnioną i własnoręcznie podpisaną deklarację w formie papierowej.</p></article>
+                    <article class="jr-person"><p class="jr-kicker">Opiekun koła</p><h3>dr inż. Karina Jasińska</h3><p>Możesz również dostarczyć papierową, podpisaną deklarację bezpośrednio do dr inż. Kariny Jasińskiej.</p></article>
                 </div>
-
-                <p class="section-description">
-                    Wybierz odpowiednią wersję językową,
-                    uzupełnij dokument i przekaż go zarządowi koła.
-                </p>
-
-            </div>
-
-            <div class="declaration-grid">
-                <a
-                    class="declaration-card"
-                    href="JOIN/deklaracja-członka-2.docx"
-                    download
-                >
-
-                    <div class="declaration-icon" aria-hidden="true">
-                        PL
-                    </div>
-
-                    <div>
-                        <p>WERSJA POLSKA</p>
-                        <h3>Deklaracja członkowska</h3>
-                        <span>Pobierz plik DOCX ↓</span>
-                    </div>
-                </a>
-
-                <a
-                    class="declaration-card"
-                    href="JOIN/membership_declaration_en.docx"
-                    download
-                >
-
-                    <div class="declaration-icon" aria-hidden="true">
-                        EN
-                    </div>
-
-                    <div>
-                        <p>ENGLISH VERSION</p>
-                        <h3>Membership declaration</h3>
-                        <span>Download DOCX ↓</span>
-                    </div>
-                </a>
+                <div class="jr-contact"><p><strong>Chcesz ustalić termin przekazania?</strong><br>Skontaktuj się z nami, aby ustalić, kiedy i gdzie możesz dostarczyć dokument.</p><a class="jr-button" href="contact.html">Przejdź do kontaktu ↗</a></div>
             </div>
         </section>
     </main>
